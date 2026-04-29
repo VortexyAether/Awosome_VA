@@ -42,3 +42,31 @@
 - Why it matters:
   - If mobile coding agents support SSH robustly, remote experiment management from a phone becomes practical.
   - Relevant for launching/checking simulations away from workstation.
+
+## Google Workspace CLI for coding agents
+
+- Link: https://www.youtube.com/watch?v=Pq12GuQw0_c
+- Type: Google Workspace CLI / coding-agent tool interface discussion
+- Shared context:
+  - The interesting part is not just human CLI usability, but that the structure appears friendly for coding agents.
+  - Future open-source projects may improve AI accessibility by shipping MCP servers or agent-facing interfaces.
+- Why it matters:
+  - Agent-readable operational surfaces can make complex projects easier to run, inspect, and automate.
+  - Good reference for designing lab tools that are usable by both humans and AI agents.
+
+## Academic/research skills and harness collections
+
+- K-Dense academic Claude skills: https://github.com/K-Dense-AI/claude-scientific-skills
+- Harness-100 collection: https://github.com/revfactory/harness-100
+- Type: Skills/harness collections
+- Why it matters:
+  - Useful starting points for building domain-specific scientific workflows.
+  - Could inspire custom skills for CFD, Scientific ML, paper triage, and repository maintenance.
+
+## Voice-to-prompt: Whispree
+
+- Link: https://github.com/Arsture/whispree/blob/main/README.ko.md
+- Type: Voice-to-prompt tool
+- Why it matters:
+  - Could make mobile/desktop interaction with coding agents faster.
+  - Potentially useful for hands-free note capture, experiment logging, or rough prompt drafting.

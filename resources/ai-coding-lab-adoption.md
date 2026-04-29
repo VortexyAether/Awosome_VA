@@ -25,3 +25,21 @@
   - Safety: secrets, costs, and review discipline
   - Examples from CFD/Scientific ML workflows
   - Shared account/API policy discussion
+
+## Codex support for open-source maintainers
+
+- Link: https://news.hada.io/topic?id=27273
+- Type: OpenAI/Codex support program for open-source developers
+- Shared context:
+  - OpenAI provides API credits and several months of ChatGPT Pro with Codex / Codex Security access to selected open-source maintainers.
+- Why it matters:
+  - Could be useful if lab members maintain open-source scientific software.
+  - Worth tracking for funding/free-credit opportunities around AI coding agents.
+
+## AI/CAE industry and career signals
+
+- Source: shared LG R&D 산학장학생 note and Hyundai coding-test/career note.
+- Type: Career / industry trend signal
+- Why it matters:
+  - Industrial demand for AI + CAE / Scientific ML appears to be increasing.
+  - Students interested in this track should maintain coding-test readiness and a portfolio of simulation/ML projects.

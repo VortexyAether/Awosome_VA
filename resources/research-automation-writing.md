@@ -38,3 +38,29 @@
   - Useful as inspiration for workflows where agents create simulation scripts, run experiments, generate plots, and draft reports.
 - Caution:
   - Treat generated reports as drafts. Numerical validation, physical interpretation, and citations must be audited.
+
+## Towards end-to-end automation of AI research
+
+- Link: https://www.nature.com/articles/s41586-026-10265-5
+- Related Korean coverage: https://share.google/wpgQ1kOcfuI8eTUcG
+- Type: AI scientist / automated research paper generation
+- Shared context:
+  - AI system can produce research papers with minimal human involvement and pass an initial peer-review stage.
+- Why it matters:
+  - Strong signal that agentic research workflows are becoming more credible.
+  - Relevant to automated literature review, experiment planning, paper drafting, and review simulation.
+- Caution:
+  - Research automation still needs human oversight for truthfulness, ethics, reproducibility, and scientific value.
+
+## Feynman: open-source AI research agent
+
+- Link: https://github.com/getcompanion-ai/feynman
+- Type: Open-source AI research agent
+- Bundled agents:
+  - Researcher: gather evidence across papers, web, repos, docs
+  - Reviewer: simulated peer review with severity-graded feedback
+  - Writer: structured drafts from research notes
+  - Verifier: inline citations, source URL verification, dead link cleanup
+- Why it matters:
+  - Good reference architecture for multi-agent research workflows.
+  - Could be useful for maintaining this repository or drafting CFD-ML literature notes.

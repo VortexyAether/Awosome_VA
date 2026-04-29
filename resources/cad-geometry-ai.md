@@ -24,3 +24,9 @@
 - Why it matters:
   - Similar workflow could be adapted for CFD geometry prototyping.
   - Still requires human engineering judgment about dimensions, tolerances, and part fit.
+
+## Corrected FreeCAD + Python + Claude Code workflow link
+
+- Link: https://www.linkedin.com/posts/roman-likhachev-23a544174_part-1-using-claude-code-for-3d-cad-design-activity-7436038784623869952-7EVs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5oIrEBMTn8gvGtlY2eLkVvjVsMFaxHEgc
+- Note:
+  - Corrected LinkedIn URL for the FreeCAD + Python + Claude Code CAD workflow.

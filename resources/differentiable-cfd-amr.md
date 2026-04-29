@@ -30,3 +30,14 @@
   - Directly relevant to compressible/reacting CFD + Scientific ML.
   - Good candidate for studying JAX-based solver design and GPU-friendly AMR.
   - Potential reference for coupling CFD solvers with neural operators or inverse/design workflows.
+
+## Geometry-autoencoder PINN for variable geometry problems
+
+- Source: shared 2022 paper PDF (`s40323-022-00221-z.pdf`) and images.
+- Type: PINN with geometry encoded through an autoencoder
+- Shared context:
+  - Geometry-varying PINN idea was already proposed around 2022.
+  - Follow-up suggestion: inspect papers citing this work to find current SOTA for PINNs with geometric variation.
+- Why it matters:
+  - Important for design optimization workflows where Reynolds number, geometry, or boundary conditions vary.
+  - Suggests a path: optimize under a specific application condition, then validate with CFD.

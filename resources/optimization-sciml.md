@@ -14,3 +14,15 @@
 - Possible follow-up:
   - Test on PINN benchmarks, operator-learning problems, or differentiable CFD inverse problems.
   - Compare against AdamW, L-BFGS, Shampoo-like second-order-ish optimizers, and baseline Muon.
+
+## Attention Residuals
+
+- Link: https://github.com/MoonshotAI/Attention-Residuals/tree/master
+- Source note: `Attention_Residuals.pdf`
+- Type: Neural network architecture / residual connection method
+- Shared summary:
+  - Addresses information dilution in fixed residual connections.
+  - Applies softmax attention over previous layer outputs to select and aggregate needed information data-dependently.
+  - Introduces Block AttnRes to reduce memory overhead and support large models.
+- Why it matters:
+  - Potentially relevant to deep surrogate models, neural operators, and long-depth architectures where residual information routing matters.
