@@ -71,49 +71,6 @@
 
 ---
 
-## ✨ Current highlights
-
-- **JAX-AMR / JANC** — accelerator-friendly AMR and differentiable CFD solver references.
-- **PhysicsNeMo-Mesh + OpenFOAM GPU acceleration** — GPU-native mesh/ML tooling and conventional solver acceleration.
-- **JAX CFD prototypes** — airfoil flap, wind turbine, and GUI-style simulation workflows for rapid CFD-ML prototyping.
-- **ForgeCAD / FreeCAD + Claude Code** — agent-assisted geometry generation for early CFD/CAE design loops.
-- **PaperOrchestra / Feynman / PaperBanana** — multi-agent paper writing, reviewing, figure generation, and source verification.
-
----
-
-## 🧪 Suggested workflows
-
-<details>
-<summary><b>Build a CFD-ML prototype</b></summary>
-
-1. Start with [JAX-based CFD prototypes](resources/jax-cfd-prototypes.md).
-2. Check solver/AMR ideas in [Differentiable CFD & AMR solvers](resources/differentiable-cfd-amr.md).
-3. Use [CAD/geometry AI](resources/cad-geometry-ai.md) or [Meshing & GPU workflows](resources/meshing-gpu-workflows.md) for geometry/mesh ideas.
-4. Visualize results with [Visualization & post-processing](resources/visualization-postprocessing.md).
-
-</details>
-
-<details>
-<summary><b>Prepare a paper or report</b></summary>
-
-1. Structure the story with [Research presentation & report structure](resources/research-presentation-workflow.md).
-2. Collect evidence and drafts with [Research automation & writing](resources/research-automation-writing.md).
-3. Use [Agent tools & research workflow](resources/agent-tools-workflow.md) for coding-agent practices.
-4. Audit claims, citations, figures, and numerical validation manually.
-
-</details>
-
-<details>
-<summary><b>Set up lab AI usage</b></summary>
-
-1. Start with [AI coding & lab adoption](resources/ai-coding-lab-adoption.md).
-2. Compare [Agent tools](resources/agent-tools-workflow.md) and [Local AI workflow](resources/local-ai-workflow.md).
-3. Keep [Security, cost & operations](resources/security-cost-ops.md) visible before giving agents credentials or cloud access.
-
-</details>
-
----
-
 ## 🧹 Curation rules
 
 - Prefer resources useful for **SciML/CFD research**, **graduate research workflow**, **AI productivity**, or **lab operations**.

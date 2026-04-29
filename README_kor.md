@@ -71,49 +71,6 @@
 
 ---
 
-## ✨ 현재 하이라이트
-
-- **JAX-AMR / JANC** — accelerator-friendly AMR 및 differentiable CFD solver 참고 자료.
-- **PhysicsNeMo-Mesh + OpenFOAM GPU acceleration** — GPU-native mesh/ML 도구와 기존 solver 가속이라는 두 방향.
-- **JAX CFD prototypes** — airfoil flap, wind turbine, GUI-style simulation workflow 등 빠른 CFD-ML 프로토타이핑 가능성.
-- **ForgeCAD / FreeCAD + Claude Code** — 초기 CFD/CAE design loop에서 agent-assisted geometry generation의 가능성.
-- **PaperOrchestra / Feynman / PaperBanana** — multi-agent 기반 논문 작성, 리뷰, figure 생성, source verification 흐름.
-
----
-
-## 🧪 추천 워크플로우
-
-<details>
-<summary><b>CFD-ML 프로토타입 만들기</b></summary>
-
-1. [JAX-based CFD prototypes](resources/jax-cfd-prototypes.md)부터 본다.
-2. solver/AMR 아이디어는 [Differentiable CFD & AMR solvers](resources/differentiable-cfd-amr.md)에서 확인한다.
-3. geometry/mesh는 [CAD/geometry AI](resources/cad-geometry-ai.md) 또는 [Meshing & GPU workflows](resources/meshing-gpu-workflows.md)를 참고한다.
-4. 결과는 [Visualization & post-processing](resources/visualization-postprocessing.md) 흐름으로 시각화한다.
-
-</details>
-
-<details>
-<summary><b>논문/보고서 준비하기</b></summary>
-
-1. [Research presentation & report structure](resources/research-presentation-workflow.md)로 이야기 구조를 잡는다.
-2. [Research automation & writing](resources/research-automation-writing.md)로 자료 수집, 초안 작성, figure 생성을 보조한다.
-3. coding-agent 사용법은 [Agent tools & research workflow](resources/agent-tools-workflow.md)를 참고한다.
-4. 주장, citation, figure, 수치 검증은 반드시 사람이 확인한다.
-
-</details>
-
-<details>
-<summary><b>연구실 AI 사용 체계 잡기</b></summary>
-
-1. [AI coding & lab adoption](resources/ai-coding-lab-adoption.md)에서 시작한다.
-2. [Agent tools](resources/agent-tools-workflow.md)와 [Local AI workflow](resources/local-ai-workflow.md)를 비교한다.
-3. agent에게 credential/cloud access를 주기 전에 [Security, cost & operations](resources/security-cost-ops.md)를 확인한다.
-
-</details>
-
----
-
 ## 🧹 큐레이션 원칙
 
 - **SciML/CFD 연구**, **대학원생 연구 워크플로우**, **AI 생산성**, **연구실 운영**에 유용한 자료를 우선한다.
