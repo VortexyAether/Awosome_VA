@@ -9,10 +9,15 @@ This repository is maintained as a lightweight, categorized index of useful pape
 - [Differentiable CFD & AMR solvers](resources/differentiable-cfd-amr.md)
 - [Meshing & GPU scientific workflows](resources/meshing-gpu-workflows.md)
 - [Neural operators & tensor methods](resources/neural-operators-tensor-methods.md)
+- [Optimization for Scientific ML](resources/optimization-sciml.md)
 - [Fluid mechanics, turbulence & AI education](resources/education-fluid-ai.md)
+- [Weather, climate & visualization](resources/weather-climate-visualization.md)
+- [Research automation & writing](resources/research-automation-writing.md)
+- [Agent tools & research workflow](resources/agent-tools-workflow.md)
 - [Local AI research workflow](resources/local-ai-workflow.md)
 - [Security, cost & operations](resources/security-cost-ops.md)
 - [Mathematical foundations](resources/math-foundations.md)
+- [Miscellaneous tools](resources/misc-tools.md)
 
 ## Curation rules
 

@@ -5,9 +5,19 @@
 - Link: https://github.com/Ashwin3919/JAX-amR
 - Tech report / test cases: https://github.com/Ashwin3919/JAX-amR/blob/main/tech-report.md
 - Type: JAX-based adaptive mesh refinement / differentiable CFD tooling
+- Shared feature notes:
+  - Adaptive mesh refinement
+  - Dimensionless computation
+  - Explicit time advancing with RK3
+  - High-order spatial reconstruction with WENO-5
+  - Lax-Friedrichs Riemann solver
+  - Point-implicit chemical source advancing
+  - CPU/GPU/TPU capability
+  - Parallel computation on GPU/TPU for the core solver in the current version
 - Why it matters:
   - Useful reference for AMR implementations in JAX.
   - Potential building block for differentiable CFD workflows.
+  - Combines high-order finite-volume ingredients with accelerator-friendly implementation choices.
   - The test cases are useful for comparing solver behavior and AMR design choices.
 
 ## JANC
