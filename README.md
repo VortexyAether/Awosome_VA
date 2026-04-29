@@ -8,6 +8,10 @@ This repository is maintained as a lightweight, categorized index of useful pape
 
 - [Differentiable CFD & AMR solvers](resources/differentiable-cfd-amr.md)
 - [Meshing & GPU scientific workflows](resources/meshing-gpu-workflows.md)
+- [GPU OpenFOAM & HPC CFD](resources/gpu-openfoam-hpc.md)
+- [JAX-based CFD prototypes](resources/jax-cfd-prototypes.md)
+- [Visualization & post-processing](resources/visualization-postprocessing.md)
+- [CAD, geometry & AI-assisted design](resources/cad-geometry-ai.md)
 - [Neural operators & tensor methods](resources/neural-operators-tensor-methods.md)
 - [Optimization for Scientific ML](resources/optimization-sciml.md)
 - [Fluid mechanics, turbulence & AI education](resources/education-fluid-ai.md)
@@ -15,6 +19,7 @@ This repository is maintained as a lightweight, categorized index of useful pape
 - [Events & opportunities](resources/events-opportunities.md)
 - [Research automation & writing](resources/research-automation-writing.md)
 - [Agent tools & research workflow](resources/agent-tools-workflow.md)
+- [AI coding & lab adoption](resources/ai-coding-lab-adoption.md)
 - [Local AI research workflow](resources/local-ai-workflow.md)
 - [Security, cost & operations](resources/security-cost-ops.md)
 - [Mathematical foundations](resources/math-foundations.md)
