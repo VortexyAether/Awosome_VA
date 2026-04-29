@@ -1,10 +1,11 @@
 # Miscellaneous Tools
 
-## Open-source HWP app
+## HOP: Open HWP
 
-- Source: shared Slack note only; link not captured.
-- Type: Document tooling
-- Why it might matter:
-  - HWP compatibility can be useful in Korean academic/admin workflows.
-- Follow-up:
-  - Add exact project link when available.
+- Link: https://golbin.github.io/hop/
+- Type: Open-source desktop HWP/HWPX viewer and editor
+- Platforms: Windows, macOS, Linux
+- Cost: Free
+- Why it matters:
+  - Useful for Korean academic/admin workflows where HWP/HWPX documents still appear often.
+  - Especially useful on macOS as a native-ish application option rather than relying only on web tools.

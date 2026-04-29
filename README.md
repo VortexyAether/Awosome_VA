@@ -12,6 +12,7 @@ This repository is maintained as a lightweight, categorized index of useful pape
 - [Optimization for Scientific ML](resources/optimization-sciml.md)
 - [Fluid mechanics, turbulence & AI education](resources/education-fluid-ai.md)
 - [Weather, climate & visualization](resources/weather-climate-visualization.md)
+- [Events & opportunities](resources/events-opportunities.md)
 - [Research automation & writing](resources/research-automation-writing.md)
 - [Agent tools & research workflow](resources/agent-tools-workflow.md)
 - [Local AI research workflow](resources/local-ai-workflow.md)

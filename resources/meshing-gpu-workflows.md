@@ -9,9 +9,21 @@
   - GPU-native mesh tooling could pair well with differentiable solvers and neural surrogate models.
   - Relevant to future workflows that combine meshing, AMR, CFD simulation, and neural operators.
 
+## Classical mesh tools: Gmsh, SALOME, Pointwise
+
+- Shared context:
+  - Gmsh, SALOME, and Pointwise were mentioned as practical mesh tools.
+  - SALOME can be powerful but often requires manual work.
+  - Example context: airfoil mesh generation and OpenFOAM tutorials.
+- Why it matters:
+  - Modern CFD-ML workflows still depend on robust geometry and meshing pipelines.
+  - Classical tools remain useful references even when exploring GPU/differentiable mesh workflows.
+- Follow-up:
+  - Collect concrete tutorials and reusable scripts for airfoil / conjugate heat transfer / OpenFOAM cases.
+
 ## Possible workflow direction
 
-- Mesh generation / processing: PhysicsNeMo-Mesh
+- Mesh generation / processing: PhysicsNeMo-Mesh or classical tools like SALOME/Gmsh/Pointwise
 - Adaptive discretization: JAX-AMR / JANC-style AMR
 - Solver layer: JAX-CFD or custom differentiable CFD solver
 - Learning layer: neural operator / surrogate / control model
