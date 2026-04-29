@@ -1,8 +1,24 @@
 # Awosome_VA
 
+[![SciML](https://img.shields.io/badge/SciML-CFD-blue)](#sciml--cfd)
+[![AI Agents](https://img.shields.io/badge/AI%20Agents-생산성-purple)](#ai-agent--생산성)
+[![Graduate Workflow](https://img.shields.io/badge/대학원생-Workflow-green)](#대학원생-연구-워크플로우)
+[![English README](https://img.shields.io/badge/README-English-red)](README.md)
+
 > **SciML & CFD 연구**, **대학원생 연구 워크플로우**, **AI 생산성 도구**를 위한 큐레이션 저장소.
 
 이 저장소는 논문, 도구, GitHub 저장소, 워크플로우, 기술 노트를 가볍게 정리하는 지식 베이스입니다. 시작은 CFD × Scientific Machine Learning 자료였지만, 연구 글쓰기, 랩 생산성, AI coding agent, 문서 도구, 운영/보안 팁까지 함께 정리합니다.
+
+## 목차
+
+- [큰 그림](#큰-그림)
+- [SciML & CFD](#sciml--cfd)
+- [대학원생 연구 워크플로우](#대학원생-연구-워크플로우)
+- [AI agent & 생산성](#ai-agent--생산성)
+- [문서/행정/운영](#문서행정운영)
+- [현재 하이라이트](#현재-하이라이트)
+- [추천 워크플로우](#추천-워크플로우)
+- [큐레이션 원칙](#큐레이션-원칙)
 
 ## 큰 그림
 

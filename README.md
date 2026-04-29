@@ -1,10 +1,26 @@
 # Awosome_VA
 
+[![SciML](https://img.shields.io/badge/SciML-CFD-blue)](#sciml--cfd)
+[![AI Agents](https://img.shields.io/badge/AI%20Agents-Productivity-purple)](#ai-agents--productivity)
+[![Graduate Workflow](https://img.shields.io/badge/Graduate-Workflow-green)](#graduate-research-workflow)
+[![Korean README](https://img.shields.io/badge/README-한국어-red)](README_kor.md)
+
 [한국어 README](README_kor.md)
 
 > Curated resources for **SciML & CFD research**, **graduate-student workflows**, and **AI-assisted productivity**.
 
 This repository is a lightweight knowledge base for papers, tools, repositories, workflows, and technical notes. It started from CFD × Scientific Machine Learning resources, but also tracks useful material for research writing, lab productivity, AI coding agents, document tools, and operational safety.
+
+## Table of contents
+
+- [Big picture](#big-picture)
+- [SciML & CFD](#sciml--cfd)
+- [Graduate research workflow](#graduate-research-workflow)
+- [AI agents & productivity](#ai-agents--productivity)
+- [Documents, admin & operations](#documents-admin--operations)
+- [Current highlights](#current-highlights)
+- [Suggested workflows](#suggested-workflows)
+- [Curation rules](#curation-rules)
 
 ## Big picture
 

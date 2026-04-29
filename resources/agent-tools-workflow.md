@@ -70,3 +70,18 @@
 - Why it matters:
   - Could make mobile/desktop interaction with coding agents faster.
   - Potentially useful for hands-free note capture, experiment logging, or rough prompt drafting.
+
+## 500+ AI Agent Projects / Use Cases
+
+- Link: https://github.com/ashishpatel26/500-AI-Agents-Projects
+- Type: Large curated collection of AI agent use cases and open-source examples
+- Frameworks/examples mentioned:
+  - CrewAI
+  - AutoGen
+  - Agno
+  - LangGraph
+- Why it matters:
+  - Useful inspiration bank for designing agent workflows across research, productivity, documentation, meetings, coding, data analysis, and automation.
+  - The framework-wise examples are useful when deciding whether a workflow should be a simple coding-agent task, a tool-using agent, or a multi-agent pipeline.
+- Curation note:
+  - Broad collection, not CFD-specific. Pull only patterns that can transfer to lab/research workflows.
