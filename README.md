@@ -1,5 +1,7 @@
 # Awosome_VA
 
+[한국어 README](README_kor.md)
+
 > Curated resources for **CFD × Scientific Machine Learning × AI-assisted engineering**.
 
 This repository is a lightweight knowledge base for papers, tools, repositories, workflows, and technical notes that may help with CFD-ML research, differentiable simulation, neural operators, meshing, research automation, and safe AI-assisted engineering.
