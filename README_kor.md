@@ -1,10 +1,19 @@
 # Awosome_VA
 
-> **CFD × Scientific Machine Learning × AI-assisted engineering** 자료 큐레이션 저장소.
+> **SciML & CFD 연구**, **대학원생 연구 워크플로우**, **AI 생산성 도구**를 위한 큐레이션 저장소.
 
-이 저장소는 CFD-ML 연구, 미분가능 시뮬레이션, Neural Operator, 메싱, 연구 자동화, AI-assisted engineering에 도움이 될 만한 논문, 도구, 저장소, 워크플로우, 기술 노트를 가볍게 정리하는 지식 베이스입니다.
+이 저장소는 논문, 도구, GitHub 저장소, 워크플로우, 기술 노트를 가볍게 정리하는 지식 베이스입니다. 시작은 CFD × Scientific Machine Learning 자료였지만, 연구 글쓰기, 랩 생산성, AI coding agent, 문서 도구, 운영/보안 팁까지 함께 정리합니다.
 
-## 빠른 지도
+## 큰 그림
+
+| 대분류 | 포함되는 것 | 시작점 |
+|---|---|---|
+| **SciML & CFD** | CFD solver, AMR, OpenFOAM, meshing, JAX prototype, neural operator, optimizer, visualization | [SciML & CFD](#sciml--cfd) |
+| **대학원생 연구 워크플로우** | 논문 작성, 연구 자동화, 발표/보고서 구조, 세미나, 학술/산업 기회 | [대학원생 연구 워크플로우](#대학원생-연구-워크플로우) |
+| **AI agent & 생산성 도구** | Claude/Codex/OpenCode, local LLM, skill/harness, voice-to-prompt, Google/agent tooling | [AI agent & 생산성](#ai-agent--생산성) |
+| **문서/행정/운영** | HWP 도구, 행사, cloud cost/security, 기타 유틸리티 | [문서/행정/운영](#문서행정운영) |
+
+## SciML & CFD
 
 | 분야 | 먼저 볼 문서 | 대표 자료 | 이런 때 유용함 |
 |---|---|---|---|
@@ -15,10 +24,31 @@
 | **시각화** | [Visualization & post-processing](resources/visualization-postprocessing.md) · [Weather/climate visualization](resources/weather-climate-visualization.md) | Omniverse Q-criterion, Earth2Studio, black-hole simulation visualization | simulation/ML field output을 해석 가능한 그림으로 만들 때 |
 | **CAD / geometry AI** | [CAD, geometry & AI-assisted design](resources/cad-geometry-ai.md) | ForgeCAD, FreeCAD + Claude Code | CFD/CAE geometry를 coding agent로 생성하거나 반복 수정할 때 |
 | **Neural operator / architecture** | [Neural operators & tensor methods](resources/neural-operators-tensor-methods.md) · [Optimization for SciML](resources/optimization-sciml.md) | Tensor train, Mamba-3, SpecMuon, Attention Residuals | SciML용 모델 구조, optimizer, compression 아이디어를 추적할 때 |
-| **연구 자동화** | [Research automation & writing](resources/research-automation-writing.md) | PaperOrchestra, PaperBanana, Feynman, Overleaf MCP, AI Scientist | literature review, 논문 초안, figure 생성, citation 검증을 자동화하고 싶을 때 |
-| **Agent workflow** | [Agent tools](resources/agent-tools-workflow.md) · [AI coding & lab adoption](resources/ai-coding-lab-adoption.md) · [Local AI workflow](resources/local-ai-workflow.md) | Claude Code tips, Codex/OpenCode, skills/harnesses, Gemma/local LLMs | 개인/연구실 AI coding workflow를 세팅하고 공유할 때 |
-| **교육 / 기회 / 운영** | [Fluid/AI education](resources/education-fluid-ai.md) · [Events](resources/events-opportunities.md) · [Security/cost/ops](resources/security-cost-ops.md) | VinuesaLab, SEMICON, AWS billing incident | 공부 자료, 행사/기회, 비용/보안 실수를 정리할 때 |
-| **기타 유용한 노트** | [Math foundations](resources/math-foundations.md) · [Presentation workflow](resources/research-presentation-workflow.md) · [Misc tools](resources/misc-tools.md) | function representation, report structure, HOP HWP | 주변부지만 종종 유용한 자료를 보관할 때 |
+| **Fluid/AI 교육** | [Fluid mechanics, turbulence & AI education](resources/education-fluid-ai.md) | VinuesaLab | fluid mechanics, turbulence, interpretable ML, AI-for-science 관점을 공부할 때 |
+| **수학적 기반** | [Mathematical foundations](resources/math-foundations.md) | function representation notes | 이론적이지만 잠재적으로 관련 있는 수학 아이디어를 보관할 때 |
+
+## 대학원생 연구 워크플로우
+
+| 분야 | 먼저 볼 문서 | 대표 자료 | 이런 때 유용함 |
+|---|---|---|---|
+| **연구 자동화 / 글쓰기** | [Research automation & writing](resources/research-automation-writing.md) | PaperOrchestra, PaperBanana, Feynman, Overleaf MCP, AI Scientist | literature review, 논문 초안, figure 생성, citation 검증을 자동화하고 싶을 때 |
+| **발표 / 보고서 구조** | [Research presentation & report structure](resources/research-presentation-workflow.md) | scenario → metric → data → learning → analysis → application workflow | 랩세미나 발표, 기술 보고서, 연구 스토리라인을 구조화할 때 |
+| **행사 / 기회** | [Events & opportunities](resources/events-opportunities.md) | SEMICON, 산업계/커리어 신호 | 시간 민감한 학술/산업 기회를 기록할 때 |
+
+## AI agent & 생산성
+
+| 분야 | 먼저 볼 문서 | 대표 자료 | 이런 때 유용함 |
+|---|---|---|---|
+| **Agent 도구** | [Agent tools & research workflow](resources/agent-tools-workflow.md) | Claude Code tips, Codex/OpenCode, Google Workspace CLI, skills/harnesses | coding agent를 연구/소프트웨어 작업에 잘 쓰고 싶을 때 |
+| **연구실 AI 도입** | [AI coding & lab adoption](resources/ai-coding-lab-adoption.md) | 공용 Claude/API 전략, 랩세미나 아이디어, Codex 지원 프로그램 | 연구실 단위 AI 사용 전략과 온보딩을 설계할 때 |
+| **Local AI workflow** | [Local AI research workflow](resources/local-ai-workflow.md) | whatcani.run, Gemma/local LLMs | 개인/로컬 AI workflow를 만들고 local model 가능성을 볼 때 |
+
+## 문서/행정/운영
+
+| 분야 | 먼저 볼 문서 | 대표 자료 | 이런 때 유용함 |
+|---|---|---|---|
+| **문서/행정 도구** | [Miscellaneous tools](resources/misc-tools.md) | HOP Open HWP, image/video AI notes | HWP 등 한국 문서 업무와 주변 유틸리티를 정리할 때 |
+| **보안 / 비용 / 운영** | [Security, cost & operations](resources/security-cost-ops.md) | AWS billing incident, secret/cost reminders | cloud, agent, credential 사용 중 비싼 실수를 피하고 싶을 때 |
 
 ## 현재 하이라이트
 
@@ -52,7 +82,7 @@
 
 ## 큐레이션 원칙
 
-- CFD, Scientific ML, CAE, differentiable simulation, research automation에 직접적으로 유용한 자료를 우선한다.
+- SciML/CFD 연구, 대학원생 연구 워크플로우, AI 생산성, 연구실 운영에 유용한 자료를 우선한다.
 - 과제, 사적인 연구실 운영 대화, 일시적인 Slack 잡담은 재사용 가능한 자료가 있을 때만 포함한다.
 - 각 entry는 짧게 유지한다: 링크, 왜 중요한지, 어디에 쓸 수 있는지.
 - 자세한 내용은 `resources/*.md`에 두고, README는 한눈에 보는 대시보드로 유지한다.
