@@ -10,3 +10,11 @@
 - Why it matters:
   - Shows a promising path for high-quality visualization of JAX-based simulation outputs.
   - Q-criterion visualization is directly relevant to vortex-dominated CFD analysis.
+
+## PyVista
+
+- Link: https://github.com/pyvista/pyvista
+- Type: Python 3D plotting and mesh analysis on VTK
+- Why it matters:
+  - Useful for quick CFD/mesh/volume visualization from Python workflows.
+  - Complements ParaView rather than replacing it: good for automation, notebooks, and scripted post-processing.

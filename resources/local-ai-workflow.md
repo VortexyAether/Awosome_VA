@@ -18,3 +18,20 @@
 - Possible use:
   - Local LLM + OpenClaw setup for private research assistant workflows.
   - Offline or low-cost summarization/classification of papers, notes, and repository contents.
+
+## Ollama
+
+- Link: https://github.com/ollama/ollama
+- Type: Local LLM runtime
+- Why it matters:
+  - Representative tool for running local models on a workstation or Mac mini.
+  - Useful for private, low-latency summarization, document triage, and lightweight assistant workflows.
+  - Model quality and memory limits depend strongly on hardware and quantization.
+
+## llama.cpp
+
+- Link: https://github.com/ggml-org/llama.cpp
+- Type: C/C++ LLM inference engine
+- Why it matters:
+  - Foundational local/edge LLM inference project.
+  - Useful for understanding quantization, CPU/GPU inference tradeoffs, and deployment below full cloud stacks.

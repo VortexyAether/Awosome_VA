@@ -41,3 +41,22 @@
 - Why it matters:
   - Important for design optimization workflows where Reynolds number, geometry, or boundary conditions vary.
   - Suggests a path: optimize under a specific application condition, then validate with CFD.
+
+## JAXFLUIDS
+
+- Link: https://github.com/tumaer/JAXFLUIDS
+- Type: Differentiable fluid dynamics package in JAX
+- Why it matters:
+  - Directly relevant to differentiable CFD, inverse design, and ML-coupled solver experiments.
+  - Useful comparison point for JAX-AMR/JANC-style accelerator-friendly CFD design.
+  - Check documentation and example maturity before relying on it for production-grade studies.
+
+## LEX v1.6.0
+
+- Paper: https://doi.org/10.5194/gmd-19-1103-2026
+- Journal page: https://gmd.copernicus.org/articles/19/1103/2026/
+- Type: JAX-based large-eddy simulation model with GPU acceleration and automatic differentiation
+- Why it matters:
+  - Shows LES implemented in JAX for atmospheric turbulence/cloud and gray-zone modeling.
+  - Combines GPU acceleration with automatic differentiation, making it relevant to learned SGS modeling.
+  - Good bridge between differentiable CFD, climate/weather modeling, and physics-ML parameterization research.

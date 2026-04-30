@@ -20,3 +20,30 @@
   - Scientific ML may benefit from efficient long-context/state-tracking models for time-series simulation data, reduced-order modeling, or trajectory modeling.
 - Note:
   - Not directly CFD-specific, but worth tracking for model architecture trends.
+
+## NVIDIA PhysicsNeMo
+
+- Link: https://github.com/NVIDIA/physicsnemo
+- Type: Physics-ML framework
+- Why it matters:
+  - Industrially visible framework for physics-informed learning, neural operators, and surrogate modeling.
+  - Useful reference for GPU-oriented SciML workflows and NVIDIA ecosystem integrations.
+  - Installation and dependency assumptions should be checked before adopting in a lab workflow.
+
+## neuraloperator
+
+- Link: https://github.com/neuraloperator/neuraloperator
+- Type: Neural operator library
+- Why it matters:
+  - Representative implementation family for Fourier Neural Operator and related operator-learning methods.
+  - Useful baseline for PDE surrogate modeling and CFD-ML literature comparisons.
+  - Helps keep neural-operator notes tied to a maintained implementation rather than only papers.
+
+## PDEBench
+
+- Link: https://github.com/pdebench/PDEBench
+- Type: Scientific ML benchmark suite for PDEs
+- Why it matters:
+  - Provides benchmark datasets/tasks for comparing PINNs, neural operators, and PDE surrogate models.
+  - Useful when deciding whether a CFD-ML method is actually improving over known baselines.
+  - Keep distinct from solver resources: it is primarily benchmark/data infrastructure.

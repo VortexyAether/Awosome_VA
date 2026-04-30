@@ -85,3 +85,20 @@
   - The framework-wise examples are useful when deciding whether a workflow should be a simple coding-agent task, a tool-using agent, or a multi-agent pipeline.
 - Curation note:
   - Broad collection, not CFD-specific. Pull only patterns that can transfer to lab/research workflows.
+
+## OpenAI Codex
+
+- Link: https://github.com/openai/codex
+- Type: Terminal coding agent
+- Why it matters:
+  - Representative coding-agent tool for repository exploration, refactoring, and implementation tasks.
+  - Useful comparison point against Claude Code, OpenCode, and OpenClaw ACP-style workflows.
+  - CLI behavior changes quickly; verify current capabilities before standardizing lab usage.
+
+## OpenCode
+
+- Link: https://github.com/opencode-ai/opencode
+- Type: Terminal-first coding agent
+- Why it matters:
+  - Practical alternative to Codex/Claude Code for coding-agent workflows.
+  - Relevant to OpenClaw ACP harness comparisons and multi-agent coding experiments.

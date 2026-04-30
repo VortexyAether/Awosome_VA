@@ -30,13 +30,13 @@
 
 | 분야 | 먼저 볼 문서 | 대표 자료 |
 |---|---|---|
-| 🧪 **Differentiable CFD / AMR** | [Differentiable CFD & AMR solvers](resources/differentiable-cfd-amr.md) | JAX-AMR, JANC, geometry-autoencoder PINN |
-| 🧱 **Meshing / HPC CFD** | [Meshing & GPU workflows](resources/meshing-gpu-workflows.md) · [GPU OpenFOAM](resources/gpu-openfoam-hpc.md) | PhysicsNeMo-Mesh, SALOME/Gmsh/Pointwise, OpenFOAM GPU acceleration |
-| 🌪️ **OpenFOAM 실무** | [OpenFOAM tips](resources/openfoam-tips.md) | solver reference, square-cylinder notes, `startFrom latestTime` |
-| ⚡ **JAX CFD 프로토타입** | [JAX-based CFD prototypes](resources/jax-cfd-prototypes.md) | IBM airfoil flap, GUI prototype, wind turbine toy model |
-| 🎞️ **시각화** | [Visualization & post-processing](resources/visualization-postprocessing.md) · [Weather/climate visualization](resources/weather-climate-visualization.md) | Omniverse Q-criterion, Earth2Studio, black-hole simulation visualization |
+| 🧪 **Differentiable CFD / AMR** | [Differentiable CFD & AMR solvers](resources/differentiable-cfd-amr.md) | JAX-AMR, JANC, JAXFLUIDS, LEX v1.6.0 |
+| 🧱 **Meshing / HPC CFD** | [Meshing & GPU workflows](resources/meshing-gpu-workflows.md) · [GPU OpenFOAM](resources/gpu-openfoam-hpc.md) | PhysicsNeMo-Mesh, meshio, SALOME/Gmsh/Pointwise, OpenFOAM GPU acceleration |
+| 🌪️ **OpenFOAM 실무** | [OpenFOAM tips](resources/openfoam-tips.md) | solver reference, OpenFOAM-dev, square-cylinder notes, `startFrom latestTime` |
+| ⚡ **JAX CFD 프로토타입** | [JAX-based CFD prototypes](resources/jax-cfd-prototypes.md) | google/jax-cfd, AeroJAX, IBM airfoil flap, GUI prototype |
+| 🎞️ **시각화** | [Visualization & post-processing](resources/visualization-postprocessing.md) · [Weather/climate visualization](resources/weather-climate-visualization.md) | PyVista, Omniverse Q-criterion, Earth2Studio, black-hole simulation visualization |
 | 🧩 **CAD / geometry AI** | [CAD, geometry & AI-assisted design](resources/cad-geometry-ai.md) | ForgeCAD, FreeCAD + Claude Code |
-| 🧠 **Neural operator / architecture** | [Neural operators & tensor methods](resources/neural-operators-tensor-methods.md) · [Optimization for SciML](resources/optimization-sciml.md) | Tensor train, Mamba-3, SpecMuon, Attention Residuals |
+| 🧠 **Neural operator / architecture** | [Neural operators & tensor methods](resources/neural-operators-tensor-methods.md) · [Optimization for SciML](resources/optimization-sciml.md) | PhysicsNeMo, neuraloperator, PDEBench, tensor train, Mamba-3 |
 | 🎓 **Fluid/AI 교육** | [Fluid mechanics, turbulence & AI education](resources/education-fluid-ai.md) | VinuesaLab |
 | ∑ **수학적 기반** | [Mathematical foundations](resources/math-foundations.md) | function representation notes |
 
@@ -46,7 +46,7 @@
 
 | 분야 | 먼저 볼 문서 | 대표 자료 |
 |---|---|---|
-| ✍️ **연구 자동화 / 글쓰기** | [Research automation & writing](resources/research-automation-writing.md) | PaperOrchestra, PaperBanana, Feynman, Overleaf MCP, AI Scientist |
+| ✍️ **연구 자동화 / 글쓰기** | [Research automation & writing](resources/research-automation-writing.md) | MarkItDown, PaperOrchestra, PaperBanana, Feynman, Overleaf MCP |
 | 🗂️ **발표 / 보고서 구조** | [Research presentation & report structure](resources/research-presentation-workflow.md) | scenario → metric → data → learning → analysis → application workflow |
 | 📌 **행사 / 기회** | [Events & opportunities](resources/events-opportunities.md) | SEMICON, 산업계/커리어 신호 |
 
@@ -58,7 +58,7 @@
 |---|---|---|
 | 🛠️ **Agent 도구** | [Agent tools & research workflow](resources/agent-tools-workflow.md) | Claude Code tips, Codex/OpenCode, Google Workspace CLI, skills/harnesses, 500+ AI agent use cases |
 | 🏫 **연구실 AI 도입** | [AI coding & lab adoption](resources/ai-coding-lab-adoption.md) | 공용 Claude/API 전략, 랩세미나 아이디어, Codex 지원 프로그램 |
-| 💻 **Local AI workflow** | [Local AI research workflow](resources/local-ai-workflow.md) | whatcani.run, Gemma/local LLMs |
+| 💻 **Local AI workflow** | [Local AI research workflow](resources/local-ai-workflow.md) | Ollama, llama.cpp, whatcani.run, Gemma/local LLMs |
 
 ---
 

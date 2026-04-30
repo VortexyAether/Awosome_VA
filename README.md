@@ -30,13 +30,13 @@
 
 | Category | Best starting point | Representative resources |
 |---|---|---|
-| 🧪 **Differentiable CFD / AMR** | [Differentiable CFD & AMR solvers](resources/differentiable-cfd-amr.md) | JAX-AMR, JANC, geometry-autoencoder PINNs |
-| 🧱 **Meshing / HPC CFD** | [Meshing & GPU workflows](resources/meshing-gpu-workflows.md) · [GPU OpenFOAM](resources/gpu-openfoam-hpc.md) | PhysicsNeMo-Mesh, SALOME/Gmsh/Pointwise, OpenFOAM GPU acceleration |
-| 🌪️ **OpenFOAM practice** | [OpenFOAM tips](resources/openfoam-tips.md) | solver reference, square-cylinder notes, `startFrom latestTime` |
-| ⚡ **JAX CFD prototypes** | [JAX-based CFD prototypes](resources/jax-cfd-prototypes.md) | IBM airfoil flap, GUI prototype, wind turbine toy model |
-| 🎞️ **Visualization** | [Visualization & post-processing](resources/visualization-postprocessing.md) · [Weather/climate visualization](resources/weather-climate-visualization.md) | Omniverse Q-criterion, Earth2Studio, black-hole simulation visualization |
+| 🧪 **Differentiable CFD / AMR** | [Differentiable CFD & AMR solvers](resources/differentiable-cfd-amr.md) | JAX-AMR, JANC, JAXFLUIDS, LEX v1.6.0 |
+| 🧱 **Meshing / HPC CFD** | [Meshing & GPU workflows](resources/meshing-gpu-workflows.md) · [GPU OpenFOAM](resources/gpu-openfoam-hpc.md) | PhysicsNeMo-Mesh, meshio, SALOME/Gmsh/Pointwise, OpenFOAM GPU acceleration |
+| 🌪️ **OpenFOAM practice** | [OpenFOAM tips](resources/openfoam-tips.md) | solver reference, OpenFOAM-dev, square-cylinder notes, `startFrom latestTime` |
+| ⚡ **JAX CFD prototypes** | [JAX-based CFD prototypes](resources/jax-cfd-prototypes.md) | google/jax-cfd, AeroJAX, IBM airfoil flap, GUI prototype |
+| 🎞️ **Visualization** | [Visualization & post-processing](resources/visualization-postprocessing.md) · [Weather/climate visualization](resources/weather-climate-visualization.md) | PyVista, Omniverse Q-criterion, Earth2Studio, black-hole simulation visualization |
 | 🧩 **CAD / geometry AI** | [CAD, geometry & AI-assisted design](resources/cad-geometry-ai.md) | ForgeCAD, FreeCAD + Claude Code |
-| 🧠 **Neural operators / architectures** | [Neural operators & tensor methods](resources/neural-operators-tensor-methods.md) · [Optimization for SciML](resources/optimization-sciml.md) | Tensor trains, Mamba-3, SpecMuon, Attention Residuals |
+| 🧠 **Neural operators / architectures** | [Neural operators & tensor methods](resources/neural-operators-tensor-methods.md) · [Optimization for SciML](resources/optimization-sciml.md) | PhysicsNeMo, neuraloperator, PDEBench, tensor trains, Mamba-3 |
 | 🎓 **Fluid/AI education** | [Fluid mechanics, turbulence & AI education](resources/education-fluid-ai.md) | VinuesaLab |
 | ∑ **Math foundations** | [Mathematical foundations](resources/math-foundations.md) | function representation notes |
 
@@ -46,7 +46,7 @@
 
 | Category | Best starting point | Representative resources |
 |---|---|---|
-| ✍️ **Research automation & writing** | [Research automation & writing](resources/research-automation-writing.md) | PaperOrchestra, PaperBanana, Feynman, Overleaf MCP, AI Scientist |
+| ✍️ **Research automation & writing** | [Research automation & writing](resources/research-automation-writing.md) | MarkItDown, PaperOrchestra, PaperBanana, Feynman, Overleaf MCP |
 | 🗂️ **Presentation / report structure** | [Research presentation & report structure](resources/research-presentation-workflow.md) | scenario → metric → data → learning → analysis → application workflow |
 | 📌 **Events & opportunities** | [Events & opportunities](resources/events-opportunities.md) | SEMICON, industry/career signals |
 
@@ -58,7 +58,7 @@
 |---|---|---|
 | 🛠️ **Agent tools** | [Agent tools & research workflow](resources/agent-tools-workflow.md) | Claude Code tips, Codex/OpenCode, Google Workspace CLI, skills/harnesses, 500+ AI agent use cases |
 | 🏫 **Lab AI adoption** | [AI coding & lab adoption](resources/ai-coding-lab-adoption.md) | shared Claude/API strategy, lab seminar idea, Codex support program |
-| 💻 **Local AI workflow** | [Local AI research workflow](resources/local-ai-workflow.md) | whatcani.run, Gemma/local LLMs |
+| 💻 **Local AI workflow** | [Local AI research workflow](resources/local-ai-workflow.md) | Ollama, llama.cpp, whatcani.run, Gemma/local LLMs |
 
 ---
 

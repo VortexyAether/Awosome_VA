@@ -35,3 +35,21 @@
 - Why it matters:
   - Demonstrates how coding agents can lower the barrier to fast CFD prototype creation.
   - Needs physical validation and refinement, but useful for rapid ideation.
+
+## google/jax-cfd
+
+- Link: https://github.com/google/jax-cfd
+- Type: JAX-based CFD framework / research prototype
+- Why it matters:
+  - Representative starting point for JAX-native CFD experiments.
+  - Useful for differentiable simulation, ML-CFD prototypes, and educational solver studies.
+  - Best treated as a research/prototyping framework rather than a production CFD solver.
+
+## AeroJAX
+
+- Link: https://github.com/arriemeijer-creator/AeroJAX
+- Type: Experimental differentiable aerodynamics / JAX flow-simulation project
+- Why it matters:
+  - Targets real-time flow simulation, control, inverse design, and neural-operator integration.
+  - Relevant to aircraft/control-oriented CFD-ML ideation.
+  - Experimental and young; keep as a project to watch, not a validated solver baseline.

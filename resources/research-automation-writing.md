@@ -64,3 +64,12 @@
 - Why it matters:
   - Good reference architecture for multi-agent research workflows.
   - Could be useful for maintaining this repository or drafting CFD-ML literature notes.
+
+## MarkItDown
+
+- Link: https://github.com/microsoft/markitdown
+- Type: Document/file to Markdown converter
+- Why it matters:
+  - Converts PDFs, Office files, and other documents into agent-friendly Markdown/text.
+  - Useful for literature triage, Drive/document ingestion, and research-note pipelines.
+  - OCR, tables, and equations still need human checking.

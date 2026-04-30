@@ -29,3 +29,11 @@
 - Learning layer: neural operator / surrogate / control model
 
 This is speculative, but the resource cluster points toward a more automated GPU-based CFD-ML pipeline.
+
+## meshio
+
+- Link: https://github.com/nschloe/meshio
+- Type: Mesh file I/O converter
+- Why it matters:
+  - Practical bridge between mesh formats such as Gmsh, VTK, XDMF, and other CFD/FEA formats.
+  - Useful for glue-code workflows where solvers, meshing tools, and post-processing libraries disagree on file formats.
