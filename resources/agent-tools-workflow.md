@@ -102,3 +102,13 @@
 - Why it matters:
   - Practical alternative to Codex/Claude Code for coding-agent workflows.
   - Relevant to OpenClaw ACP harness comparisons and multi-agent coding experiments.
+
+## KOMPAS-3D MCP client
+
+- Link: https://github.com/dwnmf/KOMPAS-3D-MCP-bin
+- Type: MCP bridge for CAD software
+- Why it matters:
+  - Shows CAD vendors/ecosystems moving toward agent-readable control surfaces via MCP-style interfaces.
+  - Useful precedent for thinking about FreeCAD/SALOME/OpenFOAM agent tooling: expose stable operations, not only screenshots or GUI macros.
+  - Windows/KOMPAS-specific, so treat as a workflow signal rather than an immediate lab dependency.
+

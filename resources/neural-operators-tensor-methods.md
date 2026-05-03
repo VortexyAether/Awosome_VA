@@ -47,3 +47,40 @@
   - Provides benchmark datasets/tasks for comparing PINNs, neural operators, and PDE surrogate models.
   - Useful when deciding whether a CFD-ML method is actually improving over known baselines.
   - Keep distinct from solver resources: it is primarily benchmark/data infrastructure.
+
+## JetSCI
+
+- Link: https://arxiv.org/abs/2604.22087
+- Type: Hybrid JAX-PETSc framework for scalable differentiable simulation
+- Why it matters:
+  - Connects JAX autodiff workflows with PETSc-scale solvers, a practical bridge for SciML beyond toy PDEs.
+  - Relevant to inverse problems, surrogate training loops, and data-driven constitutive models that still need HPC-grade simulation infrastructure.
+  - Worth tracking for CFD/heat-transfer groups that want differentiability without abandoning established solver ecosystems.
+
+## MENO: MeanFlow-Enhanced Neural Operators
+
+- Link: https://arxiv.org/abs/2604.06881
+- Type: Neural operator architecture for dynamical systems
+- Why it matters:
+  - Targets the loss of high-frequency/small-scale content in Fourier-style neural operators.
+  - Directly relevant to turbulent-flow surrogates, long-rollout stability, and reduced-order CFD modeling.
+  - Good candidate for comparison against FNO-style baselines on unsteady flow datasets.
+
+## SIMR-NO
+
+- Link: https://arxiv.org/abs/2603.28073
+- Type: Spectrally informed multi-resolution neural operator for turbulent-flow super-resolution
+- Why it matters:
+  - Focuses on reconstructing high-resolution turbulent fields from under-resolved observations.
+  - Useful for LES/DNS data compression, sensor-to-field reconstruction, and CFD post-processing acceleration.
+  - Spectral constraints make it more relevant than generic image super-resolution for fluid data.
+
+## Predictivity and Utility of Neural Surrogates of Multiscale PDEs
+
+- Link: https://arxiv.org/abs/2604.20061
+- Type: Position/analysis paper on neural PDE surrogates
+- Why it matters:
+  - Pushes against overclaiming “universal emulator” results for multiscale PDEs.
+  - Useful as a sanity-check citation when evaluating neural-operator CFD papers and benchmark claims.
+  - Helps frame when surrogates are actually useful versus when they only exploit low-dimensional benchmark structure.
+

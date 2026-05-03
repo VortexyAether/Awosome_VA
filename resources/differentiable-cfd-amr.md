@@ -60,3 +60,22 @@
   - Shows LES implemented in JAX for atmospheric turbulence/cloud and gray-zone modeling.
   - Combines GPU acceleration with automatic differentiation, making it relevant to learned SGS modeling.
   - Good bridge between differentiable CFD, climate/weather modeling, and physics-ML parameterization research.
+
+## Solver-in-the-loop differentiable coastal hydrodynamics
+
+- Link: https://arxiv.org/abs/2604.07129
+- Type: End-to-end differentiable hydrodynamics / inverse-problem framework
+- Why it matters:
+  - Demonstrates a solver-in-the-loop route for inverse design/estimation problems where full model replacement is risky.
+  - Coastal hydrodynamics is not heat transfer, but the pattern transfers to CFD inverse problems, bathymetry/geometry estimation, and engineering optimization loops.
+  - Good reference for coupling differentiable programming with legacy numerical models.
+
+## Learning subgrid interfacial area in two-phase flows
+
+- Link: https://arxiv.org/abs/2604.23946
+- Type: Learned closure / multiphase-flow subgrid modeling
+- Why it matters:
+  - Targets interfacial area density, a closure quantity that strongly affects heat and mass transfer in two-phase flows.
+  - Emphasizes regime-dependent inductive bias rather than a generic black-box model.
+  - Relevant to boiling, reactors, thermal systems, and multiphase CFD surrogate/closure work.
+

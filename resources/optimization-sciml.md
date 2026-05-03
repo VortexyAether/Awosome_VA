@@ -26,3 +26,22 @@
   - Introduces Block AttnRes to reduce memory overhead and support large models.
 - Why it matters:
   - Potentially relevant to deep surrogate models, neural operators, and long-depth architectures where residual information routing matters.
+
+## CLARA compartment-model generation for multiphase reactors
+
+- Link: https://arxiv.org/abs/2604.26695
+- Type: CFD-to-compartment-model reduction / control-oriented surrogate tooling
+- Why it matters:
+  - Automates reduced compartment-model generation from expensive multiphase CFD simulations.
+  - Directly connects CFD, real-time control, design optimization, and interpretable surrogate modeling.
+  - Strong candidate for lab discussion because it is closer to deployable engineering control than generic AI-for-PDE claims.
+
+## Robust multi-jet active flow control
+
+- Link: https://arxiv.org/abs/2604.26481
+- Type: Active flow control / reinforcement-learning-inspired control framework
+- Why it matters:
+  - Addresses robustness of multi-jet actuation for airfoil flow control in weakly compressible flow.
+  - Useful for connecting SciML/control papers to aerodynamic actuation and closed-loop CFD experiments.
+  - Track as a control benchmark idea rather than only an architecture paper.
+

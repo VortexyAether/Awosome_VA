@@ -30,3 +30,40 @@
 - Link: https://www.linkedin.com/posts/roman-likhachev-23a544174_part-1-using-claude-code-for-3d-cad-design-activity-7436038784623869952-7EVs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5oIrEBMTn8gvGtlY2eLkVvjVsMFaxHEgc
 - Note:
   - Corrected LinkedIn URL for the FreeCAD + Python + Claude Code CAD workflow.
+
+## Zero-to-CAD
+
+- Link: https://arxiv.org/abs/2604.24479
+- Type: Agentic synthesis of interpretable CAD programs
+- Why it matters:
+  - Focuses on CAD construction history / parametric program synthesis rather than only mesh or B-Rep outputs.
+  - Relevant to CFD/CAE because reusable design intent and parameters matter for geometry sweeps and optimization.
+  - Worth comparing with FreeCAD/Python agent workflows for controllability and downstream meshing robustness.
+
+## FeatureFox
+
+- Link: https://arxiv.org/abs/2604.26770
+- Type: Panoptic graph segmentation for machining feature recognition in B-Rep CAD models
+- Why it matters:
+  - Automatic feature recognition is a practical bottleneck for CAD/CAM and manufacturability-aware automation.
+  - Sample-efficient B-Rep feature recognition could support design-rule checks before simulation or fabrication.
+  - Useful signal for graph-based CAD representations beyond generic 3D shape learning.
+
+## LLM symbolic reflection for mechanical linkage design
+
+- Link: https://arxiv.org/abs/2604.27962
+- Type: LLM-assisted mechanical design optimization
+- Why it matters:
+  - Combines language-model topology exploration with numerical optimization for linkage parameters.
+  - A concrete engineering-design example of agentic search plus deterministic optimization.
+  - Pattern may transfer to CAD automation loops: symbolic design proposal → solver/optimizer → critique/refine.
+
+## Design Structure Matrix modularization with LLMs
+
+- Link: https://arxiv.org/abs/2604.28018
+- Type: LLM-assisted engineering design modularization
+- Why it matters:
+  - Uses engineering context in DSM partitioning instead of treating modularization as only graph optimization.
+  - Relevant to complex product/system architecture, CAD assembly planning, and design-automation workflows.
+  - Useful weekly-synthesis candidate for “LLMs as context-aware engineering-design heuristics.”
+
