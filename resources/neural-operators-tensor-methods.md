@@ -154,3 +154,51 @@
 - Possible use: Use as a conceptual baseline for CAD/mesh-to-field surrogate modeling and for thinking about learned simulators on unstructured CFD domains.
 - Maturity: prototype
 - Priority: High
+
+## Mesh Based Simulations with Spatial and Temporal awareness
+
+- Link: https://arxiv.org/abs/2605.01542
+- Type: Mesh-based CFD surrogate / GNN-Transformer paper
+- Why it matters:
+  - Targets a practical bottleneck in mesh-based CFD surrogates: models need awareness of both local spatial structure and temporal rollout context.
+  - ICML 2026 signal from the arXiv metadata makes it worth tracking as a higher-visibility learned-simulation direction.
+  - Relevant to unstructured CFD meshes where naive frame-to-frame predictors often lose stability or miss long-time behavior.
+- Possible use: Compare against MeshGraphNets-style baselines for time-dependent CFD surrogate experiments.
+- Maturity: paper-only
+- Priority: High
+
+## ALE-Consistent Graph Neural Operator-Transformer for FSI
+
+- Link: https://arxiv.org/abs/2605.00937
+- Type: Graph neural operator / Transformer for fluid-structure interaction
+- Why it matters:
+  - Uses an ALE-consistent framing for long-term FSI prediction on deforming unstructured meshes.
+  - Directly relevant to engineering CFD where mesh motion and coupled structures break assumptions of fixed-grid neural operators.
+  - Good candidate for tracking whether operator models can survive realistic geometry/motion coupling.
+- Possible use: Reference for moving-mesh FSI surrogate modeling and CAD/CAE workflows with deforming boundaries.
+- Maturity: paper-only
+- Priority: High
+
+## Droplet-LNO
+
+- Link: https://arxiv.org/abs/2604.20993
+- Type: Physics-informed Laplace neural operator for droplet spreading
+- Why it matters:
+  - Focuses on droplet dynamics on complex surfaces, touching microfluidics, spray cooling, inkjet printing, and wetting-driven thermal applications.
+  - Laplace/operator formulation is useful to compare against Fourier-style methods when boundaries and surface complexity matter.
+  - Strong thermal/heat-transfer adjacency because droplet spreading is central to cooling and phase-change workflows.
+- Possible use: Track for surface-aware multiphysics surrogate modeling and spray-cooling literature review.
+- Maturity: paper-only
+- Priority: Medium
+
+## Neural operator framework for stability and receptivity discovery
+
+- Link: https://arxiv.org/abs/2604.19465
+- Type: Neural operator for data-driven stability/receptivity analysis
+- Why it matters:
+  - Connects operator learning to stability and receptivity, not just field forecasting.
+  - Relevant for flow-control and sensitivity-analysis workflows where engineers care about perturbation growth and dominant response modes.
+  - Useful bridge between classical resolvent/stability analysis and data-driven surrogates when equations or linearizations are unavailable.
+- Possible use: Watch as a possible method for control-oriented CFD-AI projects.
+- Maturity: paper-only
+- Priority: High

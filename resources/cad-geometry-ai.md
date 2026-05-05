@@ -97,3 +97,27 @@
   - Smaller FreeCAD MCP bridge with tool coverage for AI-assisted 3D CAD modeling.
   - Useful comparison point for deciding what a minimal CAD-agent interface should expose.
   - Treat as early-stage until validation on real parametric parts and downstream meshing is checked.
+
+## TOOLCAD
+
+- Link: https://arxiv.org/abs/2604.07960
+- Type: Tool-using LLMs for text-to-CAD generation
+- Why it matters:
+  - Treats CAD generation as long-horizon tool use with reinforcement learning rather than one-shot text-to-shape prediction.
+  - Relevant to agentic CAD automation where valid modeling actions, constraints, and edit history matter.
+  - Good comparison point for FreeCAD/CadQuery/OpenSCAD agent workflows.
+- Possible use: Use as a paper anchor when evaluating whether CAD agents should learn tool-use policies or rely on scripted prompting.
+- Maturity: paper-only
+- Priority: High
+
+## Pointer-CAD
+
+- Link: https://arxiv.org/abs/2603.04337
+- Type: B-Rep and command-sequence CAD generation
+- Why it matters:
+  - Unifies B-Rep geometry with command sequences using pointer-based selection of edges and faces.
+  - Accepted by CVPR 2026, making it a visible signal in CAD representation learning.
+  - Useful for downstream CAE because editable B-Rep/feature history is more valuable than mesh-only geometry.
+- Possible use: Track for parametric CAD reconstruction and future CAD-to-mesh automation pipelines.
+- Maturity: paper-only
+- Priority: High

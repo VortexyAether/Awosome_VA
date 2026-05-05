@@ -123,3 +123,23 @@
   - Tracks CFD, FEA, SPH, DEM, differentiable simulation, neural operators, PINNs, MCP servers, and optimization tools.
   - Useful meta-index for discovering agent-readable engineering tooling without mixing it into the main repository unchecked.
   - Pull only high-signal tools into Awesome_VA after direct evaluation or clear CFD/SciML relevance.
+
+## CadCrawl MCP
+
+- Link: https://github.com/cadcrawl/mcp
+- Type: MCP server for CAD project memory and context
+- Why it matters:
+  - Gives CAD agents semantic memory over local CAD files, renders, revisions, and existing engineering context.
+  - Complements direct CAD-control MCP servers: before editing geometry, an agent needs to understand project history and design intent.
+  - Relevant to intelligent engineering workflows where revision context and artifact retrieval matter as much as command execution.
+- Curation note: Early-stage repository; evaluate on a real CAD folder before treating it as a dependable workflow component.
+
+## CFD MLOps surrogate framework
+
+- Link: https://github.com/RishabhMalviya/cfd-mlops
+- Type: CFD surrogate training pipeline / MLOps example
+- Why it matters:
+  - Combines car-mesh CFD surrogate modeling, Transolver-style architecture, PyTorch DDP, and Kubeflow Pipelines.
+  - Useful as a concrete example of moving CFD-ML from notebook experiments toward reproducible training pipelines.
+  - Shows the workflow layer needed around neural surrogates: distributed training, pipeline orchestration, and dataset/version discipline.
+- Curation note: Very new and unproven; keep as a workflow pattern rather than a recommended dependency.
