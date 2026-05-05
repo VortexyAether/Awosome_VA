@@ -35,7 +35,7 @@
 | 🌪️ **OpenFOAM practice** | [OpenFOAM tips](resources/openfoam-tips.md) | solver reference, OpenFOAM-dev, square-cylinder notes, `startFrom latestTime` |
 | ⚡ **JAX CFD prototypes** | [JAX-based CFD prototypes](resources/jax-cfd-prototypes.md) | google/jax-cfd, AeroJAX, IBM airfoil flap, GUI prototype |
 | 🎞️ **Visualization** | [Visualization & post-processing](resources/visualization-postprocessing.md) · [Weather/climate visualization](resources/weather-climate-visualization.md) | PyVista, Omniverse Q-criterion, Earth2Studio, black-hole simulation visualization |
-| 🧩 **CAD / geometry AI** | [CAD, geometry & AI-assisted design](resources/cad-geometry-ai.md) | ForgeCAD, FreeCAD + Claude Code, Zero-to-CAD, FeatureFox, FreeCAD MCP |
+| 🧩 **CAD / geometry AI** | [CAD, geometry & AI-assisted design](resources/cad-geometry-ai.md) | CADAM, ForgeCAD, FreeCAD + Claude Code, Zero-to-CAD, FeatureFox, FreeCAD MCP |
 | 🧠 **Neural operators / architectures** | [Neural operators & tensor methods](resources/neural-operators-tensor-methods.md) · [Optimization for SciML](resources/optimization-sciml.md) | PhysicsNeMo, neuraloperator, JetSCI, MENO, FNO-LBM, LESnets |
 | 🎓 **Fluid/AI education** | [Fluid mechanics, turbulence & AI education](resources/education-fluid-ai.md) | VinuesaLab |
 | ∑ **Math foundations** | [Mathematical foundations](resources/math-foundations.md) | function representation notes |

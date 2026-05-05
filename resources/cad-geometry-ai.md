@@ -1,5 +1,17 @@
 # CAD, Geometry & AI-assisted Design
 
+## CADAM
+
+- Link: https://github.com/Adam-CAD/CADAM
+- Live app: https://adam.new/cadam
+- Type: Open-source text-to-CAD web application
+- Why it matters:
+  - Turns natural-language prompts and image references into OpenSCAD-based 3D models in the browser.
+  - Supports parametric controls and exports to `.STL`, `.SCAD`, and `.DXF`, making it relevant to rapid CAD/CFD geometry prototyping.
+  - Built around React/TypeScript, OpenSCAD WASM, Supabase, and Claude API; useful reference for text-to-CAD product architecture.
+- Caveat:
+  - Generated geometry still needs engineering validation before meshing, simulation, or fabrication.
+
 ## ForgeCAD
 
 - Link: https://github.com/KoStard/ForgeCAD
