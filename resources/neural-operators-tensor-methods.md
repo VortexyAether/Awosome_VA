@@ -28,15 +28,6 @@
   - Useful baseline for PDE surrogate modeling and CFD-ML literature comparisons.
   - Helps keep neural-operator notes tied to a maintained implementation rather than only papers.
 
-## PDEBench
-
-- Link: https://github.com/pdebench/PDEBench
-- Type: Scientific ML benchmark suite for PDEs
-- Why it matters:
-  - Provides benchmark datasets/tasks for comparing PINNs, neural operators, and PDE surrogate models.
-  - Useful when deciding whether a CFD-ML method is actually improving over known baselines.
-  - Keep distinct from solver resources: it is primarily benchmark/data infrastructure.
-
 ## JetSCI
 
 - Link: https://arxiv.org/abs/2604.22087
@@ -127,3 +118,39 @@
   - Uses a parametric LMP2-class CAD model and expert-validated RANS data instead of overly smooth public car datasets.
   - Directly connects CAD complexity, CFD validation, and neural surrogates for fast aerodynamic design iteration.
   - Strong weekly-synthesis candidate for “engineering-grade datasets are the bottleneck for useful CFD surrogates.”
+
+## Fourier Neural Operator for Parametric Partial Differential Equations
+
+- Link: https://arxiv.org/abs/2010.08895
+- Code: https://github.com/neuraloperator/neuraloperator
+- Type: Paper / neural operator
+- Keywords: Fourier neural operator, operator learning, PDE surrogate, spectral methods
+- One-line summary: Introduces Fourier Neural Operators for learning mappings between function spaces in parametric PDE problems.
+- Why it matters: FNO is one of the core baselines for neural-operator CFD/SciML work, especially for grid-based PDE surrogate modeling and spectral field learning.
+- Possible use: Use as a baseline method when comparing neural operators for flow prediction, super-resolution, or parameter-to-field surrogate modeling.
+- Maturity: maintained library
+- Priority: High
+
+## DeepONet: Learning nonlinear operators via the universal approximation theorem of operators
+
+- Link: https://www.nature.com/articles/s42256-021-00302-5
+- Code: https://github.com/lululxvi/deeponet
+- Type: Paper / neural operator
+- Keywords: DeepONet, operator learning, Scientific Machine Learning, PDE surrogate
+- One-line summary: Introduces DeepONet as a neural-network architecture for learning nonlinear operators between function spaces.
+- Why it matters: DeepONet is a foundational operator-learning architecture and an important comparison point against FNO-style methods.
+- Possible use: Use in literature reviews to explain the operator-learning family and compare branch/trunk operator models against spectral neural operators.
+- Maturity: prototype
+- Priority: High
+
+## Learning Mesh-Based Simulation with Graph Networks
+
+- Link: https://arxiv.org/abs/2010.03409
+- Code: https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets
+- Type: Paper / graph neural simulation
+- Keywords: MeshGraphNets, graph neural networks, unstructured mesh, learned simulation
+- One-line summary: Learns simulation dynamics directly on mesh-based physical systems using graph networks.
+- Why it matters: Many engineering CFD/CAE problems live on irregular meshes, so MeshGraphNets is a key reference for geometry-aware and mesh-aware learned simulation.
+- Possible use: Use as a conceptual baseline for CAD/mesh-to-field surrogate modeling and for thinking about learned simulators on unstructured CFD domains.
+- Maturity: prototype
+- Priority: High

@@ -1,4 +1,6 @@
-# Differentiable CFD & AMR Solvers
+# Differentiable & Python PDE Solvers
+
+JAX/Python PDE and CFD solver resources for differentiable simulation, AMR, inverse/design workflows, and fast research prototypes.
 
 ## JAX-AMR
 
@@ -68,3 +70,20 @@
   - Emphasizes regime-dependent inductive bias rather than a generic black-box model.
   - Relevant to boiling, reactors, thermal systems, and multiphase CFD surrogate/closure work.
 
+## google/jax-cfd
+
+- Link: https://github.com/google/jax-cfd
+- Type: JAX-based CFD framework / research prototype
+- Why it matters:
+  - Representative starting point for JAX-native CFD experiments.
+  - Useful for differentiable simulation, ML-CFD prototypes, and educational solver studies.
+  - Best treated as a research/prototyping framework rather than a production CFD solver.
+
+## AeroJAX
+
+- Link: https://github.com/arriemeijer-creator/AeroJAX
+- Type: Experimental differentiable aerodynamics / JAX flow-simulation project
+- Why it matters:
+  - Targets real-time flow simulation, control, inverse design, and neural-operator integration.
+  - Relevant to aircraft/control-oriented CFD-ML ideation.
+  - Experimental and young; keep as a project to watch, not a validated solver baseline.

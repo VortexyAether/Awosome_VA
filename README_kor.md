@@ -28,8 +28,7 @@
 | 영역 | 먼저 볼 문서 | 포함 내용 |
 |---|---|---|
 | 📚 **CFD-AI papers & surveys** | [CFD-AI papers & surveys](resources/cfd-ai-papers-surveys.md) | Survey paper, literature map, review resource, curated paper collection |
-| 🧪 **Differentiable CFD & AMR** | [Differentiable CFD & AMR](resources/differentiable-cfd-amr.md) | Differentiable solver, adaptive discretization, ML-native PDE system |
-| ⚡ **JAX / Python PDE solvers** | [JAX CFD prototypes](resources/jax-cfd-prototypes.md) · [JAX/Python PDE solvers](resources/jax-pde-solvers.md) | JAX-CFD, PhiFlow, FiPy-style workflow, lightweight solver prototype |
+| 🧪 **Differentiable & Python PDE Solvers** | [Differentiable & Python PDE Solvers](resources/differentiable-python-pde-solvers.md) | JAX/Python solver, differentiable CFD, AMR, inverse/design workflow |
 | 🧠 **Neural operators & tensor methods** | [Neural operators & tensor methods](resources/neural-operators-tensor-methods.md) | FNO, operator learning, tensor method, QTT, spectral/operator architecture |
 | 🌪️ **Turbulence surrogate models** | [Turbulence surrogate models](resources/turbulence-surrogate-models.md) | Turbulence prediction, super-resolution, autoregressive flow prediction |
 | 🌀 **Diffusion & generative physics** | [Diffusion & generative physics](resources/diffusion-generative-physics.md) | Diffusion model, deterministic generation, spectral consistency |

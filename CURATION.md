@@ -73,11 +73,10 @@ Place each resource in the most relevant file under `resources/`.
 
 Preferred files include:
 
-- `resources/differentiable-cfd-amr.md`
+- `resources/differentiable-python-pde-solvers.md`
 - `resources/neural-operators-tensor-methods.md`
 - `resources/turbulence-surrogate-models.md`
 - `resources/diffusion-generative-physics.md`
-- `resources/jax-pde-solvers.md`
 - `resources/openfoam-ai-workflows.md`
 - `resources/research-productivity-agents.md`
 - `resources/datasets-benchmarks.md`
