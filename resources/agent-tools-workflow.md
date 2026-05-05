@@ -140,4 +140,4 @@
 - Why it matters:
   - Tracks CFD, FEA, SPH, DEM, differentiable simulation, neural operators, PINNs, MCP servers, and optimization tools.
   - Useful meta-index for discovering agent-readable engineering tooling without mixing it into the main repository unchecked.
-  - Pull only high-signal tools into Awosome_VA after direct evaluation or clear CFD/SciML relevance.
+  - Pull only high-signal tools into Awesome_VA after direct evaluation or clear CFD/SciML relevance.
