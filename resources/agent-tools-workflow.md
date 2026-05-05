@@ -1,5 +1,16 @@
 # Agent Tools & Research Workflow
 
+## cmux
+
+- Link: https://github.com/manaflow-ai/cmux
+- Type: Native macOS terminal/workspace manager for AI coding agents
+- Why it matters:
+  - Built on Ghostty/libghostty with vertical tabs, split panes, and notification rings for parallel Claude Code, Codex, Gemini, OpenCode, and similar agent sessions.
+  - Shows useful agent-operations primitives: terminal + browser panes, CLI/socket automation, workspace metadata, PR/branch/status visibility, and attention notifications.
+  - Relevant for research coding workflows where multiple simulations, repos, or agent runs need supervision without losing context.
+- Caveat:
+  - macOS-focused; evaluate fit against tmux/OpenClaw/ACP workflows before standardizing lab usage.
+
 ## Claude Code best-practice tips
 
 - Link: https://github.com/shanraisshan/claude-code-best-practice/blob/main/tips/claude-boris-6-tips-16-apr-26.md

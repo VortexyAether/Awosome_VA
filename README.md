@@ -56,7 +56,7 @@
 
 | Category | Best starting point | Representative resources |
 |---|---|---|
-| 🛠️ **Agent tools** | [Agent tools & research workflow](resources/agent-tools-workflow.md) | Claude Code tips, Codex/OpenCode, Google Workspace CLI, MCP/CAD bridges, sim-cli |
+| 🛠️ **Agent tools** | [Agent tools & research workflow](resources/agent-tools-workflow.md) | cmux, Claude Code tips, Codex/OpenCode, Google Workspace CLI, MCP/CAD bridges, sim-cli |
 | 🏫 **Lab AI adoption** | [AI coding & lab adoption](resources/ai-coding-lab-adoption.md) | shared Claude/API strategy, lab seminar idea, Codex support program |
 | 💻 **Local AI workflow** | [Local AI research workflow](resources/local-ai-workflow.md) | Ollama, llama.cpp, whatcani.run, Gemma/local LLMs |
 

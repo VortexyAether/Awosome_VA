@@ -56,7 +56,7 @@
 
 | 분야 | 먼저 볼 문서 | 대표 자료 |
 |---|---|---|
-| 🛠️ **Agent 도구** | [Agent tools & research workflow](resources/agent-tools-workflow.md) | Claude Code tips, Codex/OpenCode, Google Workspace CLI, MCP/CAD bridges, sim-cli |
+| 🛠️ **Agent 도구** | [Agent tools & research workflow](resources/agent-tools-workflow.md) | cmux, Claude Code tips, Codex/OpenCode, Google Workspace CLI, MCP/CAD bridges, sim-cli |
 | 🏫 **연구실 AI 도입** | [AI coding & lab adoption](resources/ai-coding-lab-adoption.md) | 공용 Claude/API 전략, 랩세미나 아이디어, Codex 지원 프로그램 |
 | 💻 **Local AI workflow** | [Local AI research workflow](resources/local-ai-workflow.md) | Ollama, llama.cpp, whatcani.run, Gemma/local LLMs |
 
