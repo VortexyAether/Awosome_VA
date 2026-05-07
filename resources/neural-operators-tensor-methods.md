@@ -202,3 +202,27 @@
 - Possible use: Watch as a possible method for control-oriented CFD-AI projects.
 - Maturity: paper-only
 - Priority: High
+
+## ZNO: Stable Rational Neural Operators in the Z-Domain
+
+- Link: https://arxiv.org/abs/2605.02356
+- Type: Stable rational neural operator for discrete-time dynamics
+- Why it matters:
+  - Targets discrete-time system-identification and control settings where many continuous-time neural-operator assumptions are awkward.
+  - Enforces stability through unit-disk pole constraints and gives interpretable learned poles for long-memory dynamics.
+  - Relevant to control-oriented CFD/thermal surrogates, especially when the learned model must remain stable over many steps.
+- Possible use: Compare against state-space models and neural operators for long-horizon sensor-to-state forecasting tasks.
+- Maturity: paper-only
+- Priority: High
+
+## Horizon-agnostic neural operator safety filter
+
+- Link: https://arxiv.org/abs/2605.01069
+- Type: Neural operator + control barrier function for safe deformable/fluid manipulation
+- Why it matters:
+  - Learns boundary input-output PDE dynamics while enforcing explicit task-level safety constraints online.
+  - Combines a horizon-agnostic neural operator with a lightweight QP safety filter, making it closer to deployable control than reward-shaped policies.
+  - Conceptually relevant to CFD/thermal design campaigns where exploration must avoid unsafe or invalid states.
+- Possible use: Use as a reference for safe control layers around learned PDE surrogates.
+- Maturity: paper-only
+- Priority: Medium

@@ -109,3 +109,25 @@ JAX/Python PDE and CFD solver resources for differentiable simulation, AMR, inve
   - Good application anchor for physics-informed surrogates in battery and transport electrification workflows.
 - Maturity: paper-only
 - Priority: Medium
+
+## Foundational thermal model for residential buildings
+
+- Link: https://arxiv.org/abs/2605.01364
+- Type: Physics-informed transformer for building thermal dynamics
+- Why it matters:
+  - Targets calibration-light or zero-shot transfer across buildings, climates, and control strategies rather than one-building curve fitting.
+  - Embeds derivative enrichment, Euler-style integration, static building features, and temporal attention into a thermal dynamics model.
+  - Useful application anchor for thermal digital twins where sensor coverage and building-specific calibration are practical bottlenecks.
+- Maturity: paper-only
+- Priority: Medium
+
+## Hybrid ML and physical modeling for continuous-fiber composite 3D printing
+
+- Link: https://arxiv.org/abs/2605.03186
+- Type: Hybrid physics/data-driven manufacturing model
+- Why it matters:
+  - Models feedstock deformation in robotic 3D printing using physical viscoelastic components plus neural ODEs for drying and crystallization behavior.
+  - Connects thermal stresses, residual-stress relief, material state evolution, and robotic path planning in a practical manufacturing setting.
+  - Relevant to intelligent engineering workflows where process planning needs a fast but physics-grounded digital twin.
+- Maturity: paper-only
+- Priority: Medium

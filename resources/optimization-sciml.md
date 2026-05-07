@@ -67,3 +67,26 @@
   - Transfers conceptually to CFD/thermal design-space exploration: sample efficiently without stepping into invalid or unsafe regimes.
 - Maturity: paper-only
 - Priority: Medium
+
+## Buffet alleviation via linear stability adjoint
+
+- Link: https://arxiv.org/abs/2605.04884
+- Type: CFD shape optimization / stability adjoint
+- Why it matters:
+  - Replaces empirical transonic buffet-onset surrogates with a linear-stability eigenvalue constraint inside aerodynamic shape optimization.
+  - Efficiently differentiates the dominant LST eigenvalue with respect to many shape variables using a coupled adjoint strategy.
+  - Useful anchor for high-fidelity CFD optimization where the objective is not only drag but stability margin and flight-envelope safety.
+- Possible use: Compare against ML surrogate-based buffet criteria when discussing trustworthy aerodynamic design constraints.
+- Maturity: paper-only
+- Priority: High
+
+## Differentiable multiphysics co-optimization via implicit neural representations
+
+- Link: https://arxiv.org/abs/2605.01040
+- Type: Differentiable transient multiphysics optimization benchmark
+- Why it matters:
+  - Couples implicit neural geometry with a JAX-compiled Eulerian multiphysics solver for joint geometry, boundary-condition, material, and process optimization.
+  - Includes heat transfer, phase change, moving boundaries, contact changes, and process controls in one end-to-end differentiable loop.
+  - Useful as a compact benchmark for testing whether differentiable physics workflows survive messy transient multiphysics rather than only clean PDE demos.
+- Maturity: paper-only
+- Priority: Medium

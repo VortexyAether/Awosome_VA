@@ -131,3 +131,16 @@
   - Relevant to CFD/CAE automation because downstream meshing and simulation require reproducible geometry files and validation hooks.
   - Early-stage, but the emphasis on validation is the right direction for engineering use.
 - Curation note: Evaluate generated geometry quality and export formats before using in a real CAD-to-CFD loop.
+
+## CADFS
+
+- Link: https://arxiv.org/abs/2605.01925
+- Project: https://voyleg.github.io/cadfs/
+- Type: FeatureScript CAD program dataset and framework for VLM/LLM CAD generation
+- Why it matters:
+  - Reconstructs 450k real-world CAD models as clean executable FeatureScript programs spanning a wider operation set than sketch-extrude-only datasets.
+  - Emphasizes editable design history, representation-aligned descriptions, and multimodal annotations rather than mesh-only generation.
+  - Strongly relevant to CAD-to-CAE automation because parametric construction history is what enables sweeps, constraints, and downstream meshing checks.
+- Possible use: Evaluate as a dataset/model reference for executable CAD reconstruction and text/image-conditioned parametric CAD.
+- Maturity: paper + dataset/project page
+- Priority: High
