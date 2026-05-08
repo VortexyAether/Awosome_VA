@@ -144,3 +144,27 @@
 - Possible use: Evaluate as a dataset/model reference for executable CAD reconstruction and text/image-conditioned parametric CAD.
 - Maturity: paper + dataset/project page
 - Priority: High
+
+## Cascaded Discrete Diffusion for CAD generation
+
+- Link: https://arxiv.org/abs/2605.05031
+- Type: Discrete diffusion model for CAD command and parameter generation
+- Why it matters:
+  - Models CAD as heterogeneous discrete commands and parameters instead of perturbing CAD tokens in a generic continuous embedding space.
+  - Cascades command diffusion and parameter diffusion, which better matches the validity constraints of executable CAD sequences.
+  - Useful signal for CAD-to-CAE workflows because valid construction history matters more than visually plausible shape samples.
+- Possible use: Compare against autoregressive CAD command generation and CADFS/Zero-to-CAD style executable-program approaches.
+- Maturity: paper-only
+- Priority: High
+
+## Agent-Aided Design for Dynamic CAD Models / AADvark
+
+- Link: https://arxiv.org/abs/2604.15184
+- Type: Agentic CAD system for dynamic assemblies
+- Why it matters:
+  - Extends agent-aided design beyond static objects toward assemblies with moving parts and degrees of freedom.
+  - Highlights a practical bottleneck for industrial CAD agents: reasoning about dynamic part interactions, not only generating geometry.
+  - Relevant to engineering workflows where mechanism design, constraints, and simulation readiness matter.
+- Possible use: Use as a paper anchor for evaluating CAD agents on assemblies such as hinges, linkages, pistons, valves, and other moving components.
+- Maturity: paper/prototype
+- Priority: Medium

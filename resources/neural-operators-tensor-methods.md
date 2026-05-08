@@ -226,3 +226,64 @@
 - Possible use: Use as a reference for safe control layers around learned PDE surrogates.
 - Maturity: paper-only
 - Priority: Medium
+
+## Physical Fidelity Reconstruction via Consistency-Distilled Flow Matching
+
+- Link: https://arxiv.org/abs/2605.05975
+- Type: One-step generative flow reconstruction / consistency distillation
+- Why it matters:
+  - Distills an optimal-transport flow-matching teacher into a compact one-step model for coarse-to-fine flow reconstruction.
+  - Directly targets latency-sensitive workflows such as real-time visualization, ensemble forecasting, and simulation-in-the-loop inference.
+  - Evaluated on Smoke Buoyancy, Turbulent Channel Flow, and Kolmogorov Flow, making it more CFD-relevant than generic image diffusion work.
+- Possible use: Test as a post-processing accelerator for low-resolution CFD fields or sensor/coarse-grid-to-field reconstruction.
+- Maturity: paper-only
+- Priority: High
+
+## Do Neural Operators Forget Geometry?
+
+- Link: https://arxiv.org/abs/2605.05862
+- Type: Reliability / geometry-awareness analysis for neural operators
+- Why it matters:
+  - Formalizes “geometric forgetting”: deep operator layers can progressively lose domain-geometry information.
+  - Highly relevant to irregular geometry, CAD-to-CFD surrogates, and mesh-aware operator learning where geometry cannot be treated as one-time context.
+  - Proposes lightweight geometry memory injection and suggests a practical validation probe for neural-operator architectures.
+- Possible use: Add geometry-retention diagnostics when comparing FNO/attention/operator models on CAD or unstructured-mesh CFD data.
+- Maturity: paper-only
+- Priority: High
+
+## AeroJEPA
+
+- Link: https://arxiv.org/abs/2605.05586
+- Type: JEPA-style aerodynamic field surrogate
+- Why it matters:
+  - Predicts semantic latent representations of 3D aerodynamic fields from geometry and operating-condition context instead of directly predicting huge full-resolution fields.
+  - Targets realistic large-field regimes through HiLiftAeroML and broad transonic-wing generalization through SuperWing.
+  - Useful direction for design optimization because the latent space is meant to support analysis and optimization, not only reconstruction.
+- Possible use: Track as a candidate architecture pattern for scalable 3D aerodynamic design loops.
+- Maturity: paper-only
+- Priority: High
+
+## MeLISA: One-Step Generative Modeling for Dynamical Forecasting
+
+- Link: https://arxiv.org/abs/2605.05540
+- Type: One-step generative surrogate for autoregressive dynamical systems
+- Why it matters:
+  - Addresses the gap between cheap but drifting neural-operator rollouts and expensive multi-step diffusion/generative surrogates.
+  - Uses pixel-space MeanFlow with consistency losses to preserve long-trajectory statistics in turbulent regimes.
+  - Relevant to unsteady CFD surrogate modeling where long-horizon statistical fidelity matters more than a single-step RMSE.
+- Possible use: Compare against FNO/MENO-style baselines on turbulent-flow rollout benchmarks.
+- Maturity: paper-only
+- Priority: Medium
+
+## Context Flux Neural Operator
+
+- Link: https://arxiv.org/abs/2605.05488
+- Code: https://github.com/xx257xx/CONTEXT_FLUX_NO
+- Type: Context-conditioned flux neural operator for conservation laws
+- Why it matters:
+  - Combines finite-volume-inspired Flux NO with recurrent ViT context injection to infer solution dynamics across conservation-law families.
+  - Preserves the solver-assist flavor of flux/operator methods while reducing reliance on explicitly supplied PDE coefficients.
+  - Interesting foundation-model direction for conservative systems where robustness and long-time prediction are critical.
+- Possible use: Use as a baseline/reference for conservation-law surrogate experiments and solver-in-the-loop SciML designs.
+- Maturity: paper + code
+- Priority: High
