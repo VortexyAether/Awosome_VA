@@ -170,3 +170,16 @@
 - Possible use: Use as a paper anchor for evaluating CAD agents on assemblies such as hinges, linkages, pistons, valves, and other moving components.
 - Maturity: paper/prototype
 - Priority: Medium
+
+## Tessa Labs freecad-mcp
+
+- Link: https://github.com/tessalabs-space/freecad-mcp
+- Type: Engineering-focused MCP server for FreeCAD
+- Why it matters:
+  - Exposes FreeCAD operations for parametric CAD generation, design sweeps, drawings, rendering, defeaturing, meshing/export, and CAE handoff.
+  - The inclusion of boundary-condition tagging and simulation-prep operations is especially relevant to CAD-to-CFD/thermal automation.
+  - Good reference for designing an agent-readable CAD interface that preserves engineering metadata instead of only producing geometry.
+- Possible use: Evaluate against mcp-freecad/freecad-mcp alternatives on a small parametric part → mesh/export → OpenFOAM or thermal handoff workflow.
+- Maturity: early open-source MCP server
+- Priority: High
+

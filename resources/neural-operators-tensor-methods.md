@@ -287,3 +287,52 @@
 - Possible use: Use as a baseline/reference for conservation-law surrogate experiments and solver-in-the-loop SciML designs.
 - Maturity: paper + code
 - Priority: High
+
+## RETO: Rotary-Enhanced Transformer Operator for automotive aerodynamics
+
+- Link: https://arxiv.org/abs/2605.00062
+- Type: Transformer neural operator for aerodynamic field prediction
+- Why it matters:
+  - Targets high-fidelity automotive aerodynamics on ShapeNet and DrivAerML-like settings.
+  - Uses global sinusoidal-cosine references plus RoPE-style relative spatial encoding to improve local gradient and displacement awareness.
+  - Relevant to CAD/geometry-conditioned CFD surrogates where spatial correlations matter more than generic image-like field prediction.
+- Possible use: Compare against Transolver/FNO/GNO baselines on automotive or external-aero surrogate tasks.
+- Maturity: paper-only
+- Priority: High
+
+## Real-time HR flow-field estimation from event-based imaging velocimetry
+
+- Link: https://arxiv.org/abs/2605.04186
+- Type: Sensor-to-field reconstruction / ROM estimation
+- Why it matters:
+  - Converts low-resolution real-time EBIV snapshots into high-resolution velocity fields and POD coordinates.
+  - Combines LR-to-HR mapping with temporal regularization/Kalman-style estimators, making it relevant to closed-loop flow-control workflows.
+  - Good bridge between experimental fluid sensing, reduced-order modeling, and real-time digital twins.
+- Possible use: Prototype sparse/coarse measurement → POD-coordinate estimation for a controlled CFD dataset.
+- Maturity: paper-only
+- Priority: Medium
+
+## Constrained Extreme Gradient Boosting for adapting ROMs
+
+- Link: https://arxiv.org/abs/2605.04130
+- Type: Adaptive reduced-order modeling method
+- Why it matters:
+  - Addresses ROM degradation under parameter variation using a constrained ensemble-learning correction layer.
+  - Potentially easier to integrate into parametric CFD/FEA optimization loops than a large end-to-end neural surrogate.
+  - Useful reference for lightweight ROM adaptation when simulation data at every operating condition is unavailable.
+- Possible use: Test as a basis-adaptation baseline for parametric thermal or fluid surrogate studies.
+- Maturity: paper-only
+- Priority: Medium
+
+## Control-oriented cluster-based reduced-order modelling
+
+- Link: https://arxiv.org/abs/2604.25474
+- Type: Control-oriented reduced-order model
+- Why it matters:
+  - Generalizes cluster network model transition probabilities and times across unseen control parameters.
+  - Directly targets reduced dynamics for operating regimes where no simulation data is available.
+  - Relevant to flow-control and aeroelastic-control studies where surrogate behavior under new controls matters.
+- Possible use: Compare against POD/DMD-style control surrogates on a simple separated-flow or oscillator dataset.
+- Maturity: paper-only
+- Priority: Medium
+

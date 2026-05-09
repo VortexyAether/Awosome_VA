@@ -162,3 +162,27 @@
   - Takes CadQuery code and returns 3MF, PNG, and GLB artifacts, which fits agentic CAD loops where code generation must be rendered and inspected.
   - CadQuery is attractive for CFD/CAE because parametric Python geometry can be versioned, swept, and regenerated.
   - Small early project, but the interface shape is useful for designing reproducible geometry-generation tools.
+
+## sim-benchmark
+
+- Link: https://github.com/svd-ai-lab/sim-benchmark
+- Type: Solver-grounded benchmark for simulation agents
+- Why it matters:
+  - Benchmarks agents on real OpenFOAM and LTspice workflows with deterministic verification, not LLM-as-judge scoring.
+  - Requires KPI values to include source provenance so the verifier can re-run extraction commands against produced artifacts.
+  - Strong reference pattern for evaluating intelligent engineering agents: artifact correctness and reproducibility matter more than fluent explanations.
+- Possible use: Adapt the result schema and provenance checks for VA's OpenFOAM/CAD-to-CAE agent experiments.
+- Maturity: early benchmark
+- Priority: High
+
+## FoamPilot
+
+- Link: https://github.com/elotech47/foampilot_csc7644
+- Type: Natural-language OpenFOAM agent prototype
+- Why it matters:
+  - Uses retrieval over official OpenFOAM tutorials, then copies and surgically edits a valid template case rather than generating solver files from scratch.
+  - This template-first pattern is safer for OpenFOAM automation because syntax, file layout, and solver conventions start from known-good cases.
+  - Useful precedent for lab workflows where agents should modify validated cases and report mesh/convergence/post-processing artifacts.
+- Curation note: Student/project prototype; evaluate robustness before relying on it.
+- Priority: Medium
+

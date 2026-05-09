@@ -20,3 +20,16 @@ Resources for turbulence prediction, reduced-order modeling, super-resolution, a
 - Learned RANS/LES closure models
 - Generative models for physical fields
 - Sensor-to-field reconstruction and sparse observation assimilation
+
+## LESnets for wall-bounded turbulence
+
+- Link: https://arxiv.org/abs/2604.26621
+- Type: Physics-informed neural operator for LES-style wall turbulence prediction
+- Why it matters:
+  - Focuses on 3D wall-bounded turbulent flows where multiscale vortices and long-rollout stability are difficult for generic PINO models.
+  - Brings LES intuition into neural-operator design rather than treating turbulence as only a high-dimensional image sequence.
+  - Useful candidate for evaluating high-Reynolds-number surrogate claims beyond low-dimensional benchmark PDEs.
+- Possible use: Track as a comparison point for wall-bounded turbulence datasets and PINO variants.
+- Maturity: paper-only
+- Priority: High
+
