@@ -2,6 +2,18 @@
 
 Flow datasets, SciML benchmarks, reproducibility references, metrics, and evaluation protocols.
 
+## Zero-To-CAD-1m
+
+- Link: https://huggingface.co/datasets/ADSKAILab/Zero-To-CAD-1m
+- Paper: https://arxiv.org/abs/2604.24479
+- Type: CAD dataset / text-to-3D and image-to-3D benchmark resource
+- Keywords: CAD, CadQuery, synthetic data, construction sequence, parametric CAD, 3D generation
+- One-line summary: A large Autodesk AI Lab dataset of executable CadQuery CAD programs with operation traces, renders, STL, and STEP exports.
+- Why it matters: CAD-to-CAE automation needs editable construction histories and reliable exports, not just mesh-only shapes; this dataset is a strong reference point for parametric CAD generation and evaluation.
+- Possible use: Train or benchmark CAD agents/models that produce executable geometry for downstream meshing, design sweeps, and validation loops.
+- Maturity: Hugging Face dataset / Apache-2.0
+- Priority: High
+
 ## PDEBench: An Extensive Benchmark for Scientific Machine Learning
 
 - Link: https://arxiv.org/abs/2210.07182

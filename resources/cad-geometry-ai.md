@@ -46,9 +46,11 @@
 ## Zero-to-CAD
 
 - Link: https://arxiv.org/abs/2604.24479
+- Dataset: https://huggingface.co/datasets/ADSKAILab/Zero-To-CAD-1m
 - Type: Agentic synthesis of interpretable CAD programs
 - Why it matters:
   - Focuses on CAD construction history / parametric program synthesis rather than only mesh or B-Rep outputs.
+  - The 1M-scale Hugging Face dataset includes CadQuery programs, operation traces, multi-view renders, STL, and STEP exports for training/evaluating text/image-to-CAD models.
   - Relevant to CFD/CAE because reusable design intent and parameters matter for geometry sweeps and optimization.
   - Worth comparing with FreeCAD/Python agent workflows for controllability and downstream meshing robustness.
 
