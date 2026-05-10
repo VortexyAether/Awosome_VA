@@ -175,6 +175,18 @@
 - Maturity: early benchmark
 - Priority: High
 
+## Agentic AI in Engineering and Manufacturing
+
+- Link: https://arxiv.org/abs/2604.09633
+- Type: Industry interview study / agentic engineering workflow adoption
+- Why it matters:
+  - Synthesizes 30+ stakeholder interviews across enterprises, smaller firms, AI developers, and CAD/CAM/CAE vendors.
+  - Finds near-term value in structured repetitive work and data-intensive synthesis, while higher-value agentic gains require orchestrating multi-step workflows across tools.
+  - Highlights the real blockers VA should design around: fragmented machine-unfriendly data, security/regulatory constraints, weak legacy APIs, verification, auditability, and human-in-the-loop review.
+- Possible use: Use as a framing citation for why engineering agents need artifact contracts, provenance, and approval gates rather than autonomous black-box tool use.
+- Maturity: qualitative study
+- Priority: High
+
 ## FoamPilot
 
 - Link: https://github.com/elotech47/foampilot_csc7644
@@ -185,4 +197,3 @@
   - Useful precedent for lab workflows where agents should modify validated cases and report mesh/convergence/post-processing artifacts.
 - Curation note: Student/project prototype; evaluate robustness before relying on it.
 - Priority: Medium
-

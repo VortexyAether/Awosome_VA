@@ -300,6 +300,30 @@
 - Maturity: paper-only
 - Priority: High
 
+## Nested Fourier-enhanced neural operator for radiation transfer in fires
+
+- Link: https://arxiv.org/abs/2604.13919
+- Type: Neural operator surrogate for radiative heat transfer / fire CFD
+- Why it matters:
+  - Targets radiative transfer, often the dominant heat-transfer cost in fire simulations, rather than only generic velocity/pressure field forecasting.
+  - Uses a Fourier-enhanced multiple-input neural-operator formulation and extends from small 2D pool-fire tests toward 3D CFD fire simulations.
+  - Strong thermal/heat-transfer signal for solver-acceleration workflows where a learned component replaces an expensive sub-model inside a larger CFD code.
+- Possible use: Track as a candidate pattern for coupling neural operators to radiation or property submodels while preserving the surrounding CFD solver.
+- Maturity: paper-only
+- Priority: High
+
+## Reduced-order modeling of parameterized visco-plastic shallow flows
+
+- Link: https://arxiv.org/abs/2605.06526
+- Type: Tensor reduced-order model for nonlinear free-surface flows
+- Why it matters:
+  - Handles Herschel-Bulkley shallow flows with moving fronts, yield surfaces, and non-smooth rheology — a harder surrogate target than smooth benchmark PDEs.
+  - Uses low-rank tensor/HOSVD-style compression over structured parameter spaces for rapid online reconstruction without reduced time integration.
+  - Useful reminder that classical ROM/tensor methods remain competitive for design loops when the parameter space is structured and solver calls are expensive.
+- Possible use: Compare tensor ROM against neural operators for parametric non-Newtonian or slurry/free-surface flow screening tasks.
+- Maturity: paper-only
+- Priority: Medium
+
 ## Real-time HR flow-field estimation from event-based imaging velocimetry
 
 - Link: https://arxiv.org/abs/2605.04186
@@ -335,4 +359,3 @@
 - Possible use: Compare against POD/DMD-style control surrogates on a simple separated-flow or oscillator dataset.
 - Maturity: paper-only
 - Priority: Medium
-

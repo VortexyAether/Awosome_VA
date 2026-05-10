@@ -27,7 +27,7 @@
 
 ## FreeCAD + Python + Claude Code workflow
 
-- Link: https://www.linkedin.com/posts/roman-likhachev-23a544174_part-1-using-claude-code-for-3d-cad-design-i-activity-7442571132618260480-GaND
+- Link: https://www.linkedin.com/posts/roman-likhachev-23a544174_part-1-using-claude-code-for-3d-cad-design-activity-7436038784623869952-7EVs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5oIrEBMTn8gvGtlY2eLkVvjVsMFaxHEgc
 - Type: LLM-assisted CAD design workflow
 - Summary:
   - Claude Code writes Python geometry.
@@ -36,12 +36,6 @@
 - Why it matters:
   - Similar workflow could be adapted for CFD geometry prototyping.
   - Still requires human engineering judgment about dimensions, tolerances, and part fit.
-
-## Corrected FreeCAD + Python + Claude Code workflow link
-
-- Link: https://www.linkedin.com/posts/roman-likhachev-23a544174_part-1-using-claude-code-for-3d-cad-design-activity-7436038784623869952-7EVs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5oIrEBMTn8gvGtlY2eLkVvjVsMFaxHEgc
-- Note:
-  - Corrected LinkedIn URL for the FreeCAD + Python + Claude Code CAD workflow.
 
 ## Zero-to-CAD
 
@@ -183,3 +177,26 @@
 - Maturity: early open-source MCP server
 - Priority: High
 
+## SolidWorks CAD Automation Pipeline
+
+- Link: https://github.com/wikijerry/CAD-Automation-pipeline
+- Type: Agentic SolidWorks 3D-to-2D drawing automation prototype
+- Why it matters:
+  - Automates SolidWorks 3D → 2D drawing generation with view selection, auto-dimensioning, validation, Python COM API hooks, and LLM integration.
+  - Relevant to engineering automation beyond text-to-CAD: production workflows often need drawings, dimensions, checks, and revision artifacts.
+  - Useful as a lightweight reference for how CAD agents might operate through deterministic CAD APIs rather than screenshots or free-form GUI control.
+- Curation note: Very early and low-star; treat as an implementation signal to inspect, not as a dependable lab tool.
+- Maturity: early prototype
+- Priority: Medium
+
+## Generalizable graph learning for 3D engineering AI
+
+- Link: https://arxiv.org/abs/2604.07781
+- Type: Physics-aware graph learning workflow for CAD/CAE/CFD assets
+- Why it matters:
+  - Converts heterogeneous 3D engineering assets such as FE models, CAD geometry, BiW representations, and CFD meshes into reusable graph representations.
+  - Demonstrates both CAE vibration mode-shape classification and CFD field prediction, making it relevant beyond single-task toy geometry learning.
+  - The explainable workflow framing is useful for engineering teams that need traceable model behavior across design stages.
+- Possible use: Use as a reference when designing mesh/CAD graph features for CFD surrogate or CAE classification tasks.
+- Maturity: paper-only
+- Priority: High
