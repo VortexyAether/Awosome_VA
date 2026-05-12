@@ -37,3 +37,16 @@ AI-assisted OpenFOAM setup, automation, case validation, post-processing, and en
 - Possible use: Compare its artifact schema and mesh/diagnostic gates against sim-benchmark/FoamPilot when designing a safer OpenFOAM agent harness.
 - Maturity: early open-source research prototype
 - Priority: High
+
+## sim-plugin-openfoam
+
+- Link: https://github.com/svd-ai-lab/sim-plugin-openfoam
+- Related: https://github.com/svd-ai-lab/sim-cli · https://github.com/svd-ai-lab/sim-benchmark
+- Type: OpenFOAM plugin for solver-grounded AI agent workflows
+- Why it matters:
+  - Lets AI coding agents operate OpenFOAM through `sim-cli`, with emphasis on running cases, inspecting results, and producing replayable CFD artifacts.
+  - Complements AI CFD Scientist and FoamPilot by focusing on deterministic verification and artifact contracts rather than only natural-language interaction.
+  - Useful pattern for lab-safe OpenFOAM automation: require rerunnable commands, KPI provenance, and structured outputs before trusting an agent's summary.
+- Possible use: Evaluate as a reference interface for VA's OpenFOAM agent harness and compare its artifact schema with sim-benchmark.
+- Maturity: early open-source plugin
+- Priority: High

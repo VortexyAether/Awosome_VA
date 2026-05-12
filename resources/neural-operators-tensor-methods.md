@@ -359,3 +359,27 @@
 - Possible use: Compare against POD/DMD-style control surrogates on a simple separated-flow or oscillator dataset.
 - Maturity: paper-only
 - Priority: Medium
+
+## Inpainting physics for context-driven fluid simulation
+
+- Link: https://arxiv.org/abs/2605.08832
+- Type: Self-supervised CFD surrogate / flow prior
+- Why it matters:
+  - Reformulates steady CFD inference as context-conditioned inpainting rather than a fixed geometry/boundary-condition-to-field mapping.
+  - Uses latent flow matching and masked-autoencoder models over compact local-neighbourhood tokens to scale toward large 3D meshes.
+  - Relevant to CAD/CAE iteration because unchanged simulation context can be reused during local geometry edits or boundary-condition shifts.
+- Possible use: Benchmark against FNO/Transolver-style supervised surrogates on geometry-edit and sparse-context reconstruction tasks.
+- Maturity: paper-only
+- Priority: High
+
+## AeroJEPA
+
+- Link: https://arxiv.org/abs/2605.05586
+- Type: Predictive latent representation model for 3D aerodynamic fields
+- Why it matters:
+  - Decouples latent prediction from high-resolution field reconstruction, which helps with very large aerodynamic fields.
+  - Learns design-meaningful latent spaces that support interpolation, probing, concept-vector arithmetic, and constrained latent optimization.
+  - Directly relevant to many-query aerodynamic design workflows where a surrogate should support analysis and optimization, not only fast field prediction.
+- Possible use: Compare with neural operators and Transolver-style models for CAD/wing-family aerodynamic surrogate experiments.
+- Maturity: paper-only
+- Priority: High

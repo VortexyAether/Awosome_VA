@@ -226,3 +226,15 @@
 - Possible use: Test on a small bracket/duct/heat-sink part and require the agent to report volume, bounding box, cross-sections, clearance, and exported STEP/STL artifacts.
 - Maturity: active early tool / PyPI package
 - Priority: High
+
+## BenchCAD
+
+- Link: https://arxiv.org/abs/2605.10865
+- Type: Industrial programmatic CAD benchmark
+- Why it matters:
+  - Provides 17,900 execution-verified CadQuery programs across 106 industrial part families, including gears, springs, drills, and other reusable engineering designs.
+  - Evaluates visual QA, code QA, image-to-code generation, and instruction-guided code editing, so CAD automation is measured beyond visual similarity.
+  - Highlights that current multimodal models often recover coarse outer shape but fail at faithful parametric operations such as sweeps, lofts, and twist-extrudes.
+- Possible use: Use as a benchmark reference for VA's executable-CAD and CAD-to-CAE validation experiments alongside CADTests/CADTestBench.
+- Maturity: paper / benchmark
+- Priority: High
