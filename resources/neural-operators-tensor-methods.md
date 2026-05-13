@@ -383,3 +383,52 @@
 - Possible use: Compare with neural operators and Transolver-style models for CAD/wing-family aerodynamic surrogate experiments.
 - Maturity: paper-only
 - Priority: High
+
+## Compositional Neural Operators for Multi-Dimensional Fluid Dynamics
+
+- Link: https://arxiv.org/abs/2605.11691
+- Type: Compositional neural operator for fluid-dynamics surrogates
+- Why it matters:
+  - Targets multi-dimensional fluid dynamics with compositional operator structure rather than treating every flow family as one monolithic black-box mapping.
+  - Relevant to CFD surrogate generalization where geometry, dimension, field components, and boundary conditions should ideally be recombined across tasks.
+  - Useful paper anchor for comparing modular/operator-composition approaches against larger scientific foundation model claims.
+- Possible use: Track as a method candidate for small multi-physics or multi-geometry CFD surrogate benchmarks.
+- Maturity: paper-only
+- Priority: High
+
+## jNO
+
+- Link: https://arxiv.org/abs/2605.10159
+- Code: https://github.com/FhG-IISB/jNO
+- Type: JAX library for neural operators and PDE foundation-model training
+- Why it matters:
+  - Provides a JAX-native stack for data-driven and physics-informed neural-operator training.
+  - Its tracing system for domains, model calls, residuals, supervised losses, and PDE losses is useful for reproducible SciML experiments.
+  - More actionable than a paper-only architecture when building VA-style benchmark loops for heat transfer, CFD, or PDE surrogate comparison.
+- Possible use: Evaluate as the base library for a compact heat/CFD neural-operator sandbox.
+- Maturity: early open-source library
+- Priority: High
+
+## CATO: Charted Attention for Neural PDE Operators
+
+- Link: https://arxiv.org/abs/2605.09016
+- Type: Transformer-style neural PDE operator for complex geometries
+- Why it matters:
+  - Addresses a practical weakness of attention-based PDE operators on complex geometries.
+  - Relevant to CAD/mesh-to-field surrogate workflows where geometry representation, charting, and local coordinates can dominate performance.
+  - Useful comparison point against FNO/GNO/mesh-based operator approaches for non-rectangular engineering domains.
+- Possible use: Track for geometry-heavy surrogate experiments after simple fixed-grid baselines are working.
+- Maturity: paper-only
+- Priority: Medium
+
+## Physics-Informed Neural PDE Solvers via Spatio-Temporal MeanFlow
+
+- Link: https://arxiv.org/abs/2605.08915
+- Type: Physics-informed neural PDE solver
+- Why it matters:
+  - Attempts to capture continuous spatio-temporal physical structure beyond pointwise residual penalties.
+  - Relevant to PDE systems where long-range dependencies and rollout consistency matter more than one-step field accuracy.
+  - Good candidate to compare with PINNs and neural operators on small canonical PDE problems before trusting it on CFD.
+- Possible use: Use as a method reference for physics-informed PDE solver benchmarks.
+- Maturity: paper-only
+- Priority: Medium

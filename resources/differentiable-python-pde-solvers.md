@@ -155,3 +155,15 @@ JAX/Python PDE and CFD solver resources for differentiable simulation, AMR, inve
 - Possible use: Compare ROM-style parameter-to-field reconstruction with FNO/GNO baselines on non-Newtonian or shallow-flow datasets.
 - Maturity: paper-only
 - Priority: Medium
+
+## Fast prediction of lattice thermal conductivity with ML surrogates
+
+- Link: https://arxiv.org/abs/2605.11610
+- Type: Materials/thermal-property surrogate
+- Why it matters:
+  - Targets lattice thermal conductivity prediction, an expensive bottleneck in materials screening and thermal design.
+  - Relevant to heat-transfer workflows where material-property evaluation feeds into downstream simulation or optimization loops.
+  - Useful thermal-adjacent reminder that surrogate modeling is not only field prediction; property and closure models can also be high-leverage acceleration points.
+- Possible use: Track for thermal-material screening and property-surrogate references.
+- Maturity: paper-only
+- Priority: Medium
