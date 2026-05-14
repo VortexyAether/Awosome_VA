@@ -221,3 +221,37 @@
 - Possible use: Evaluate alongside build123d-mcp and FreeCAD Robust MCP on the same parametric part → STEP/STL export → meshability checklist.
 - Maturity: active open-source MCP server
 - Priority: Medium
+
+## Explainable Model Predictive Control with Hierarchical Causal Abduction
+
+- Link: https://arxiv.org/abs/2605.10624
+- Type: Explainable control / MPC framework
+- Why it matters:
+  - Connects model predictive control actions to causal and physics-informed explanations rather than leaving optimizer outputs opaque.
+  - Relevant to intelligent engineering workflows where an agent must justify control recommendations and expose safety/constraint reasoning.
+  - Useful conceptual anchor for thermal/HVAC/plant-control demos with audit trails.
+- Maturity: paper-only
+- Priority: Medium
+
+## ZWCAD Mechanical MCP
+
+- Link: https://github.com/john0909/ZWCAD-Mechanical-MCP
+- Type: MCP server for ZWCAD Mechanical CAD automation
+- Why it matters:
+  - Exposes 200+ CAD operations including 2D/3D drawing, dimensioning, blocks, layers, BOM/title blocks, transforms, views, LISP execution, import, and export.
+  - Strong signal that vendor-specific CAD ecosystems are moving toward agent-readable operation surfaces.
+  - Useful comparison point when designing safer FreeCAD/SALOME/OpenFOAM agent interfaces.
+- Curation note: Vendor-specific and early; evaluate capability, safety boundaries, and reproducibility before using in a production workflow.
+- Maturity: early open-source MCP server
+- Priority: Medium
+
+## TopSolid automation MCP
+
+- Link: https://github.com/Julien38300/topsolid-automation-mcp
+- Type: MCP server for TopSolid 7 CAD/PDM workflow
+- Why it matters:
+  - Attempts to connect MCP-compatible AI agents to TopSolid CAD/PDM operations.
+  - Important because engineering agents need access to design context and PDM state, not just isolated geometry commands.
+  - Useful workflow signal for CAD/PDM-aware research automation even if it is not an immediate lab dependency.
+- Maturity: early community project
+- Priority: Medium

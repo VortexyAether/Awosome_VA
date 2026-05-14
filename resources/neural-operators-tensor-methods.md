@@ -432,3 +432,37 @@
 - Possible use: Use as a method reference for physics-informed PDE solver benchmarks.
 - Maturity: paper-only
 - Priority: Medium
+
+## Shock-Centered Low-Rank Structure for Rarefied Micro-Nozzle Flows
+
+- Link: https://arxiv.org/abs/2605.12723
+- Type: Neural-operator / reduced-structure CFD surrogate paper
+- Why it matters:
+  - Shows that DSMC-resolved micro-nozzle compression layers become much lower-complexity when represented in a shock-centered coordinate system.
+  - Useful reminder that CFD surrogate quality can depend on physics-aware registration and normalization, not only on neural architecture choice.
+  - Relevant to compressible/rarefied-flow surrogate design where discontinuities or localized layers dominate apparent field complexity.
+- Possible use: Test feature-aligned coordinates such as shock location, separation point, recirculation length, or thermal boundary-layer thickness before training FNO/GNO baselines.
+- Maturity: paper-only
+- Priority: High
+
+## EqOD: Symmetry-Informed Stability Selection for PDE Identification
+
+- Link: https://arxiv.org/abs/2605.11524
+- Type: PDE discovery / interpretable SciML method
+- Why it matters:
+  - Uses symmetry cues such as Galilean invariance to reduce candidate PDE libraries before sparse identification.
+  - Helps control false positives when discovering governing equations from noisy trajectory data.
+  - Useful as a sanity-check method for data-driven fluid/transport model identification where interpretability matters.
+- Maturity: paper-only
+- Priority: Medium
+
+## Port-Hamiltonian Neural Networks for Nonlinear String Dynamics
+
+- Link: https://arxiv.org/abs/2605.12785
+- Type: Structure-preserving neural dynamics identification
+- Why it matters:
+  - Extends port-Hamiltonian neural-network ideas toward distributed-parameter nonlinear dynamics.
+  - Relevant to control-oriented SciML because energy, passivity, and interconnection structure are often more important than black-box forecast error.
+  - Worth tracking as a pattern for thermal/fluid/control surrogates where physical structure should constrain learned dynamics.
+- Maturity: paper-only
+- Priority: Medium

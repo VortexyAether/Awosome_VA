@@ -238,3 +238,37 @@
 - Possible use: Use as a benchmark reference for VA's executable-CAD and CAD-to-CAE validation experiments alongside CADTests/CADTestBench.
 - Maturity: paper / benchmark
 - Priority: High
+
+## CAD-feature enhanced ML for sheet-metal bending effort estimation
+
+- Link: https://arxiv.org/abs/2605.12266
+- Type: CAD graph / manufacturability ML paper
+- Why it matters:
+  - Shows that B-rep geometry alone can miss process-specific meaning such as surface role and bend intent.
+  - Directly supports a CAD-to-CAE automation principle: downstream models need engineering semantics, not only raw topology and coordinates.
+  - Useful reference for adding named faces, manufacturing roles, boundary-condition intent, and feature metadata to agent-generated CAD.
+- Possible use: Design a small schema for CAD semantic tags that survives export into meshing/CFD setup.
+- Maturity: paper-only
+- Priority: High
+
+## Nonlinear Parametric Model Embedding for Shape Design
+
+- Link: https://arxiv.org/abs/2605.11759
+- Type: Dimensionality reduction for parametric shape design
+- Why it matters:
+  - Extends parametric model embedding beyond linear reductions while preserving backmapping to the original design parameters.
+  - Relevant to simulation-based shape optimization where high-dimensional CAD parameters make surrogate modeling and design-space exploration brittle.
+  - Useful framing for blade/duct/heat-exchanger design loops: reduce design variables without losing a path back to executable geometry.
+- Maturity: paper-only
+- Priority: Medium
+
+## PINN-based 2D turbine blade design screening
+
+- Link: https://arxiv.org/abs/2605.07131
+- Type: PINN surrogate for aerodynamic blade design
+- Why it matters:
+  - Targets rapid preliminary screening of turbine blade geometries across operating conditions.
+  - Connects PINN-style SciML to a concrete thermal-fluid design problem instead of a generic PDE benchmark.
+  - Useful as an application anchor for Carnot battery / turbomachinery / energy-system design loops, with validation caveats for off-design and complex geometries.
+- Maturity: paper-only
+- Priority: Medium
