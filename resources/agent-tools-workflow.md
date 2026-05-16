@@ -291,3 +291,38 @@
 - Possible use: Inspect as a reference design for VA-style goal-driven OpenFOAM/SciML campaigns with provenance and stop conditions.
 - Maturity: early open-source / PyPI project
 - Priority: Medium
+
+## Lang2MLIP
+
+- Link: https://arxiv.org/abs/2605.14527
+- Type: Agentic workflow for machine-learning interatomic potential development
+- Why it matters:
+  - Turns MLIP development into a language-driven autonomous workflow spanning atomistic simulation, active learning, model training, and iteration.
+  - Shows agentic SciML at the campaign-management layer rather than only as a coding assistant.
+  - Useful pattern for CFD/SciML automation: propose cases, run trusted solvers, curate data, train surrogates, and report evidence.
+- Possible use: Use as an analogy when designing an OpenFOAM/thermal surrogate campaign agent with explicit validation gates.
+- Maturity: paper-only
+- Priority: Medium
+
+## Jarvis Onshape MCP
+
+- Link: https://github.com/ReshefElisha/jarvis-onshape-mcp
+- Type: MCP plugin for Onshape CAD automation
+- Why it matters:
+  - Exposes a real cloud CAD system through MCP/Claude Code rather than relying only on screenshots or mesh-only generation.
+  - Combines vision decomposition, FeatureScript, and parametric iteration, which is closer to reusable engineering CAD than text-to-shape previews.
+  - Strong signal that CAD agents need stable CAD APIs, editable construction history, and truth-telling about failed operations.
+- Possible use: Compare its Onshape/FeatureScript loop with FreeCAD/CadQuery MCP approaches for CAD-to-CAE workflows.
+- Maturity: early open-source tool
+- Priority: High
+
+## FreeCAD MCP with FluidX3D/OpenFOAM extensions
+
+- Link: https://github.com/sandraschi/freecad-mcp
+- Type: FreeCAD MCP server with CFD extension ambitions
+- Why it matters:
+  - Combines a FastMCP FreeCAD server/webapp with explicit FluidX3D and OpenFOAM extension direction.
+  - Very early, but the CAD-to-CFD interface shape is directly aligned with VA's geometry → meshing → simulation automation interest.
+  - Useful scouting target alongside more mature FreeCAD MCP servers to see which operations are essential for CFD handoff.
+- Curation note: Low-star and early-stage; inspect before use, treat as a design signal rather than a dependable dependency.
+- Priority: Medium

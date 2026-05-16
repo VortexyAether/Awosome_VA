@@ -167,3 +167,27 @@ JAX/Python PDE and CFD solver resources for differentiable simulation, AMR, inve
 - Possible use: Track for thermal-material screening and property-surrogate references.
 - Maturity: paper-only
 - Priority: Medium
+
+## Real-time control of multiphase processes with learned operators
+
+- Link: https://arxiv.org/abs/2603.25308
+- Type: Learned-operator control for multiphase processes
+- Why it matters:
+  - Puts learned operators inside a real-time control setting for nonlinear multiphase dynamics, not just offline prediction.
+  - Relevant to thermal-fluid process control where sensors are sparse and phase transitions make classical reduced models brittle.
+  - Good anchor for thinking about surrogate-in-the-loop MPC and closed-loop validation.
+- Possible use: Review when designing a control benchmark around two-phase cooling, reactor flow, or multiphase process optimization.
+- Maturity: paper-only
+- Priority: High
+
+## Chrono-Gymnasium
+
+- Link: https://arxiv.org/abs/2605.14911
+- Type: Distributed high-fidelity mechanical simulation framework
+- Why it matters:
+  - Wraps Project Chrono multibody dynamics in a Gymnasium-compatible distributed framework using Ray.
+  - Useful workflow pattern for solver-backed RL and optimization in mechanical systems.
+  - Not CFD-specific, but relevant to engineering-agent benchmarks where an agent must run high-fidelity simulators and report verifiable artifacts.
+- Possible use: Study its Gymnasium/Ray interface pattern for future OpenFOAM or FluidX3D reinforcement-learning/control wrappers.
+- Maturity: paper/framework
+- Priority: Medium

@@ -514,3 +514,51 @@
 - Possible use: Evaluate on low-fidelity-to-high-fidelity CFD field reconstruction with conservation and rollout diagnostics.
 - Maturity: paper-only
 - Priority: Medium
+
+## Topology-Preserving Neural Operator Learning via Hodge Decomposition
+
+- Link: https://arxiv.org/abs/2605.13834
+- Type: Structure-preserving neural operator for geometric meshes
+- Why it matters:
+  - Uses Hodge decomposition to separate topological degrees of freedom from learnable geometric dynamics.
+  - Relevant to CFD/CAE surrogates on unstructured meshes where divergence/curl/topological modes should not be treated as generic image features.
+  - Good reference for moving beyond plain L2 field matching toward physically structured operator learning.
+- Possible use: Add Hodge/topology-aware diagnostics when comparing neural operators on mesh-based flow or thermal-field benchmarks.
+- Maturity: paper-only
+- Priority: High
+
+## UFO: Domain-Unification-Free Operator Framework
+
+- Link: https://arxiv.org/abs/2605.12700
+- Type: Cross-domain neural operator framework
+- Why it matters:
+  - Avoids forcing physical, spectral, and latent representations into a single domain.
+  - Adaptive cross-domain interactions may help multi-physics surrogates that need both local geometry and global spectral structure.
+  - Useful comparison point against FNO-style single-domain inductive bias.
+- Possible use: Track as a candidate architecture family for mixed thermal/fluid/porous-media surrogate tasks.
+- Maturity: paper-only
+- Priority: Medium
+
+## Frequency Bias and OOD Generalization in Neural Operators
+
+- Link: https://arxiv.org/abs/2605.12997
+- Type: Neural-operator reliability / OOD analysis
+- Why it matters:
+  - Studies how neural operators behave under structured distribution shift in a variable-coefficient wave equation.
+  - Reinforces that surrogate validation should include spectral and OOD diagnostics, not just average field error.
+  - Transferable lesson for CFD surrogates where high-frequency boundary layers, shocks, or interface features dominate engineering utility.
+- Possible use: Use as a citation and test-design reference for frequency-band error metrics in VA's surrogate benchmarks.
+- Maturity: paper-only
+- Priority: High
+
+## ViT-K
+
+- Link: https://arxiv.org/abs/2605.13912
+- Type: Few-shot surrogate for coupled free-flow / porous-media systems
+- Why it matters:
+  - Targets coupled Stokes/Navier-Stokes-Darcy flows with interface conditions, a costly class of fluid-porous simulations.
+  - Directly relevant to cold plates, filtration, porous heat exchangers, and thermal-fluid components with interface heterogeneity.
+  - Few-shot framing is useful when high-fidelity CFD labels are too expensive for dense parameter sweeps.
+- Possible use: Compare against neural-operator and ROM baselines on a small free-flow/porous-interface benchmark.
+- Maturity: paper-only
+- Priority: High
