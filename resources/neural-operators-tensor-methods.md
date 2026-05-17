@@ -562,3 +562,39 @@
 - Possible use: Compare against neural-operator and ROM baselines on a small free-flow/porous-interface benchmark.
 - Maturity: paper-only
 - Priority: High
+
+## Inpainting physics
+
+- Link: https://arxiv.org/abs/2605.08832
+- Type: Self-supervised context-driven CFD surrogate
+- Why it matters:
+  - Trains fluid surrogates by reconstructing masked/contextual flow fields instead of relying only on fully specified geometry and boundary-condition vectors.
+  - Better matches practical engineering states where the agent may have partial simulations, sparse sensors, geometry patches, or incomplete setup metadata.
+  - Useful framing for CFD foundation models that need flexible conditioning rather than a fixed forward-operator signature.
+- Possible use: Build a small masked-field benchmark for duct/cavity/heat-transfer cases and compare inpainting-style conditioning against direct forward surrogates.
+- Maturity: paper-only
+- Priority: High
+
+## Shock-Centered Low-Rank Neural-Operator Representation
+
+- Link: https://arxiv.org/abs/2605.12723
+- Type: Neural-operator representation for rarefied micro-nozzle flows
+- Why it matters:
+  - Shows that DSMC-resolved micro-nozzle flow complexity can become much lower-rank after shock-centered registration and finite-thickness scaling.
+  - Important caution for compressible/rarefied-flow surrogates: coordinate alignment and feature registration can matter as much as architecture scale.
+  - Suggests diagnostics for when neural operators are wasting capacity on movable discontinuities rather than learning physical variation.
+- Possible use: Compare raw-coordinate vs shock-centered surrogate training on nozzle, shock-tube, or compressible boundary-layer datasets.
+- Maturity: paper-only
+- Priority: High
+
+## Mesh Based Simulations with Spatial and Temporal awareness
+
+- Link: https://arxiv.org/abs/2605.01542
+- Type: Mesh-based CFD surrogate architecture / evaluation paper
+- Why it matters:
+  - Calls out a practical bottleneck in mesh-based GNN/Transformer CFD surrogates: spatial and temporal awareness is often underspecified despite being central to rollout quality.
+  - Relevant to unstructured-mesh engineering simulations where topology, local neighborhoods, timestep history, and field evolution jointly determine prediction stability.
+  - Useful as an evaluation-design reference when comparing mesh surrogate architectures beyond one-step field error.
+- Possible use: Add temporal-rollout and mesh-generalization diagnostics to VA's future CFD surrogate benchmark notes.
+- Maturity: paper-only
+- Priority: Medium

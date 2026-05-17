@@ -284,3 +284,51 @@
 - Possible use: Use after CadQuery/build123d/FreeCAD generation to gate STEP artifacts before OpenFOAM meshing or thermal simulation.
 - Maturity: early open-source tool with DOI / validate before lab adoption
 - Priority: High
+
+## KiCAD MCP Server
+
+- Link: https://github.com/mixelpixx/KiCAD-MCP-Server
+- Type: MCP server for PCB CAD / EDA automation
+- Why it matters:
+  - Lets LLM assistants interact directly with KiCAD projects, moving engineering agents from advisory chat toward real design-artifact inspection and modification.
+  - Although EDA rather than CFD, it is a strong signal for agent-callable engineering software surfaces and artifact-aware workflows.
+  - Useful precedent for CAD/CAE MCP design: expose stable operations, project state, and validation hooks instead of relying on screenshots alone.
+- Curation note: Evaluate on a sandbox KiCAD project before trusting edits to real designs.
+- Maturity: active open-source tool
+- Priority: Medium
+
+## neka-nat/freecad-mcp
+
+- Link: https://github.com/neka-nat/freecad-mcp
+- Type: MCP server for FreeCAD automation
+- Why it matters:
+  - Exposes FreeCAD as an agent-callable parametric CAD environment, making it relevant to reproducible geometry generation and CAD-to-CAE workflows.
+  - More visible than many small FreeCAD MCP experiments, so it is a useful candidate for comparison testing.
+  - Could support VA-style duct, heat-sink, bracket, and parametric sweep workflows if paired with export and meshability checks.
+- Possible use: Sandbox a simple heat-sink/duct generation task and require named faces, bounding box, STEP/STL export, and mesh pre-check evidence.
+- Maturity: active early tool
+- Priority: High
+
+## multiCAD-mcp
+
+- Link: https://github.com/AnCode666/multiCAD-mcp
+- Type: Multi-CAD MCP bridge
+- Why it matters:
+  - Attempts to expose multiple CAD tools through a common MCP-style interface for AI assistants.
+  - Important ecosystem signal: CAD-agent infrastructure is fragmenting across vendor/tool bridges, making common artifact contracts more important.
+  - Useful comparison point for whether VA's workflows should target one robust open CAD API first or design a tool-agnostic validation layer.
+- Curation note: Validate supported CAD tools, operation coverage, and export reliability before relying on it.
+- Maturity: early open-source tool
+- Priority: Medium
+
+## FreeCAD AI workbench
+
+- Link: https://github.com/ghbalf/freecad-ai
+- Type: AI assistant workbench for FreeCAD
+- Why it matters:
+  - Provides an in-FreeCAD natural-language assistant for generating and modifying 3D models.
+  - Useful UX reference for AI-assisted parametric CAD inside an engineering application rather than only through external chat.
+  - Needs deterministic validation before generated models are used for meshing, manufacturing, or simulation.
+- Possible use: Compare with MCP-based FreeCAD workflows: embedded assistant UX vs external agent with explicit tools and evidence logs.
+- Maturity: active early tool
+- Priority: Medium

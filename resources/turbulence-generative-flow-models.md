@@ -33,3 +33,14 @@ Resources for turbulence prediction, reduced-order modeling, super-resolution, a
 - Maturity: paper-only
 - Priority: High
 
+## Realizability-Constrained Machine Learning for Turbulence Closures in Wake Flows
+
+- Link: https://arxiv.org/abs/2605.12304
+- Type: Physics-constrained learned turbulence closure
+- Why it matters:
+  - Addresses numerical instability, residual stagnation, and non-physical behavior that can appear when symbolic-regression or ML turbulence closures are embedded in CFD solvers.
+  - Reinforces that learned closures need realizability and stability constraints, not only offline fit quality.
+  - Directly relevant to wake-flow modeling and any attempt to put ML closures into production-like CFD loops.
+- Possible use: Use as a reference for closure-model validation gates: realizability, solver convergence, residual behavior, and physical stress constraints.
+- Maturity: paper-only
+- Priority: High
