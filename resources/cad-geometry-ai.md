@@ -332,3 +332,27 @@
 - Possible use: Compare with MCP-based FreeCAD workflows: embedded assistant UX vs external agent with explicit tools and evidence logs.
 - Maturity: active early tool
 - Priority: Medium
+
+## cadgate
+
+- Link: https://github.com/vericontext/cadgate
+- Type: CAD-as-code validation CLI / GitHub Action
+- Why it matters:
+  - Validates AI-generated CadQuery/build123d pull requests with geometric metric diff, minimum wall thickness, DFM rules, and six-view rendered previews.
+  - Directly addresses the CAD-agent bottleneck: engineering artifacts need deterministic evidence, not only plausible-looking generated geometry.
+  - Useful pattern for CAD-to-CAE workflows where generated parts must pass dimension, manufacturability, export, and meshability gates before simulation.
+- Possible use: Adapt its PR-gate pattern for VA's parametric heat-sink/duct generation workflows.
+- Maturity: early open-source tool
+- Priority: High
+
+## manifold-mcp
+
+- Link: https://github.com/zhicwan/manifold-mcp
+- Type: MCP server for manifold-3d geometry generation
+- Why it matters:
+  - Validates LLM-generated TypeScript geometry snippets and streams outputs to a live three.js preview with STL/3MF export.
+  - Useful lightweight reference for agentic geometry generation where validation and export are built into the tool surface.
+  - More manufacturing/prototyping-oriented than full CAE, but the validate-preview-export loop transfers well to CAD automation.
+- Possible use: Compare with CadQuery/build123d/FreeCAD MCP flows for simple parametric parts.
+- Maturity: early open-source MCP server
+- Priority: Medium

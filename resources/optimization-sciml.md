@@ -90,3 +90,15 @@
   - Useful as a compact benchmark for testing whether differentiable physics workflows survive messy transient multiphysics rather than only clean PDE demos.
 - Maturity: paper-only
 - Priority: Medium
+
+## Spatial-correlation curriculum for PINNs
+
+- Link: https://arxiv.org/abs/2605.15254
+- Type: PINN training curriculum / optimization method
+- Why it matters:
+  - Uses spatial correlation to schedule Physics-Informed Neural Network training for nonlinear PDEs.
+  - Explicitly relevant to fluid mechanics, heat transfer, and solid mechanics where PINN training can be unstable or inefficient.
+  - Useful as a training-protocol reference when comparing PINNs against neural operators or classical solvers.
+- Possible use: Test whether spatial-correlation curricula improve convergence on thermal diffusion or incompressible-flow PINN baselines.
+- Maturity: paper-only
+- Priority: Medium

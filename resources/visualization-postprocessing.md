@@ -23,3 +23,15 @@
 - Why it matters:
   - Provides a public, reusable bridge between LLM agents and ParaView.
   - Useful for CAD-to-CFD-to-visualization workflows where an agent needs to load results, inspect fields, and generate views.
+
+## viznoir
+
+- Link: https://github.com/kimimgo/viznoir
+- Type: AI-ready VTK visualization toolkit
+- Why it matters:
+  - Focuses on VTK-based scientific and engineering visualization with agent-friendly workflow potential.
+  - Useful for CFD/CAE agents that need inspectable visual artifacts rather than only textual solver summaries.
+  - Could support validation loops where screenshots, field statistics, and VTK artifacts are produced together.
+- Possible use: Evaluate as a lightweight visualization layer for OpenFOAM/VTK post-processing in agentic CFD workflows.
+- Maturity: early open-source tool
+- Priority: Medium

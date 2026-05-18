@@ -598,3 +598,39 @@
 - Possible use: Add temporal-rollout and mesh-generalization diagnostics to VA's future CFD surrogate benchmark notes.
 - Maturity: paper-only
 - Priority: Medium
+
+## Martingale Neural Operators
+
+- Link: https://arxiv.org/abs/2605.15806
+- Type: Stochastic neural operator / uncertainty-aware operator learning
+- Why it matters:
+  - Addresses conditional-mean collapse in deterministic neural operators for stochastic PDEs.
+  - Important for engineering UQ workflows where variance, tails, and reliability matter as much as mean field accuracy.
+  - Useful reference for thermal/fluid surrogate benchmarks that include uncertain inputs or stochastic forcing.
+- Possible use: Compare against deterministic FNO-style baselines on stochastic PDE or uncertain-boundary heat/flow tasks.
+- Maturity: paper-only
+- Priority: High
+
+## AOT-POT
+
+- Link: https://arxiv.org/abs/2605.15793
+- Type: Adaptive operator transformation for large-scale PDE pre-training
+- Why it matters:
+  - Targets the structural diversity problem in pretraining neural operators across heterogeneous PDE datasets.
+  - Relevant to scientific foundation-model efforts that try to combine thermal, fluid, porous, and wave-like regimes.
+  - Good reminder that dataset aggregation alone can be harmful unless operator/domain differences are handled explicitly.
+- Possible use: Track as a pretraining strategy when designing multi-PDE surrogate experiments.
+- Maturity: paper-only
+- Priority: High
+
+## Martingale/UQ surrogate validation note
+
+- Link: https://arxiv.org/abs/2605.16078
+- Type: Neural surrogate performance study for uncertainty propagation
+- Why it matters:
+  - Evaluates neural network surrogate behavior in stochastic boundary-value problems from a UQ perspective.
+  - Useful for checking whether field-surrogate error corrupts downstream uncertainty estimates, not just point predictions.
+  - Directly relevant to heat-transfer and CFD design problems with uncertain properties, boundary conditions, or geometry parameters.
+- Possible use: Include uncertainty-propagation metrics in surrogate benchmarks before using models for design decisions.
+- Maturity: paper-only
+- Priority: Medium
